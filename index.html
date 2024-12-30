@@ -1,375 +1,1119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website | CodingNepal</title>
-    <!-- Linking CSS File -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Fontawesome link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Bootstrap link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    </head>
-<body>
-    <!-- Header & Navbar -->
-    <header class="bg-dark fixed-top">
-        <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold fs-3" href="#">James Anderson</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="#skills">SKILLS</a>
-                        </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-        </div>
-        </div>
-    </nav>
-    </header>
-    <!-- Hero or Showcase Section -->
-    <section class="hero d-flex flex-column align-items-center justify-content-center">
-        <div class="text-center">
-            <h1 class="h1 text-white fw-medium fst-italic">James Anderson</h1>
-            <h2 class="display-3 text-white fw-bold">Information & Computer Systems <br /> student</h2>
-            <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
-        </div>
-    </section>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zubair Ali - Flutter Developer</title>
     
-    <!-- Skills Section -->
-    <section class="container py-5" id="skills">
-        <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center justify-content-center">
-                <h2>SKILLS</h2>
-                <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the
-                    field.</h5>
+    <!--
+                                                                                                                                                                            - favicon
+                                                                                                                                                                          -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    
+    <!--
+                                                                                                                                                                            - custom css link
+                                                                                                                                                                          -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!--
+                                                                                                                                                                            - google font link
+                                                                                                                                                                          -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+<!--
+    - #MAIN
+  -->
+
+<main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="avatar-box">
+                <img src="./assets/images/my-avatar.JPG" alt="Richard hanrick" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Richard hanrick">Zubair Ali</h1>
+
+                <p class="title">Flutter Developer</p>
             </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+                </button>
+</div>
+
+<div class="sidebar-info_more">
+
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+
+        <li class="contact-item">
+
+            <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:zubair.workspace@gmail.com" class="contact-link">zubair.workspace@gmail.com</a>
+            </div>
+
+        </li>
+<li class="contact-item">
+
+    <div class="icon-box">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
     </div>
-    <div class="row d-flex justify-content-between mx-0">
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-            <i
-                class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
-            <h3 class="mt-4 h4">Front-end Development</h3>
-            <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building
-                user-friendly interfaces, and using modern frameworks like ReactJS.</p>
-        </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-            <i
-                class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
-            <h3 class="mt-4 h4">Back-end Development</h3>
-            <p class="text-center">Skilled in server-side programming using technologies like Node.js and Express.
-                Experience working with databases such as MongoDB and MySQL.</p>
-        </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-            <i
-                class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
-            <h3 class="mt-4 h4">Mobile App Development</h3>
-            <p class="text-center">Proficient in developing mobile apps for iOS and Android using frameworks like React
-                Native. Experienced in building engaging and intuitive mobile user interfaces.</p>
-        </div>
-        </div>
-    </section>
-    <!-- Portfolio Section -->
-    <section class="container py-5" id="portfolio">
-        <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center justify-content-center">
-                <h2>PORTFOLIO</h2>
-                <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
-            </div>
-        <div class="row mt-5 mx-0 justify-content-center align-items-center">
-            <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
-                <div class="card mt-4">
-                    <img src="images/ecommerce.png" class="img-fluid" alt="portfolio-img">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">E-commerce Website</h6>
-                        <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                    <img src="images/landing-page.jpg" class="img-fluid" alt="portfolio-img">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Responsive Landing Page</h6>
-                        <p class="card-text text-secondary">HTML/CSS/Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                    <img src="images/calculator-app.jpg" class="img-fluid" alt="portfolio-img">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Calculator App</h6>
-                        <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                    <img src="images/blog.jpg" class="img-fluid" alt="portfolio-img">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Blog Website</h6>
-                        <p class="card-text text-secondary">HTML/CSS/PHP</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                    <img src="images/react.jpg" class="img-fluid" alt="portfolio-img">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Task Management App</h6>
-                        <p class="card-text text-secondary">ReactJS</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                    <img src="images/python.jpg" class="img-fluid" alt="portfolio-img">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Data Visualization</h6>
-                        <p class="card-text text-secondary">Python/Plotly</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </section>
-        <!-- About Section -->
-        <section class="container py-5" id="about">
-            <div class="row mt-4 py-3">
-                <div class="col-12 d-flex flex-column text-center">
-                    <h2>ABOUT</h2>
-                    <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me, my background, and what motivates
-                        me.</h5>
-                </div>
-            </div>
-            <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-                <div class="col-9 col-md-5 text-md-end">
-                    <h5>1995-2008</h5>
-                    <h5>Early Passion for Technology</h5>
-                    <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS,
-                        I gradually expanded my skills to include JavaScript and various frameworks.</p>
-                </div>
-        <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-1.jpg" alt="img">
-        </div>
+
+    <div class="contact-info">
+        <p class="contact-title">Phone</p>
+
+        <a href="tel:+12133522795" class="contact-link">+92 318 4595649</a>
     </div>
-    <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-2.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-            <h5>2008-2014</h5>
-            <h5>Higher Education and Career Growth</h5>
-            <p>During my university years, I studied computer science and gained hands-on experience through internships and
-                freelance projects. This period fueled my passion for creating innovative solutions and solving complex
-                problems.</p>
-        </div>
-        </div>
-    <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-            <h5>2014-Present</h5>
-            <h5>Professional Excellence and Continuous Learning</h5>
-            <p>Throughout my career, I have consistently sought opportunities to refine my skills and stay updated with the
-                latest technologies. I strive for excellence in every project I undertake and aim to deliver valuable and
-                impactful results.</p>
-        </div>
-        <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-3.jpg" alt="img">
-        </div>
+
+</li>
+<li class="contact-item">
+
+    <div class="icon-box">
+        <ion-icon name="location-outline"></ion-icon>
     </div>
-    <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-4.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-            <h5>Future</h5>
-            <h5>Continuing to Make a Difference</h5>
-            <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive
-                impact on society. I am eager to take on new challenges and collaborate with talented individuals to create
-                innovative solutions.</p>
-        </div>
-        </div>
-    <div class="row justify-content-md-center mt-5 pt-5">
-        <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
-            <h2
-                class="h4 d-flex justify-content-center align-items-center bg-primary text-white rounded-circle border border-5 border-dark-subtle">
-                <span class="d-none d-md-block">Your<br>Next<br>Hire</span></h2>
-        </div>
+
+    <div class="contact-info">
+        <p class="contact-title">Location</p>
+
+        <address>Lahore, Pakistan</address>
     </div>
-    </section>
-    <!-- Curriculum Vitae Section -->
-    <section class="container py-5" id="cv">
-        <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center">
-                <h2>CURRICULUM VITAE</h2>
-                <h5 class="text-secondary fw-normal py-2 fst-italic">A small sampling of some of the projects I've worked on
-                    as a student of the ICS program.</h5>
+
+</li>
+</ul>
+
+<div class="separator"></div>
+
+<ul class="social-list">
+
+    <li class="social-item">
+        <a href="https://join.skype.com/invite/ynYFkPyxFAnH" class="social-link">
+            <ion-icon name="logo-skype"></ion-icon>
+        </a>
+    </li>
+<li class="social-item">
+    <a href="https://github.com/zubairali001" class="social-link">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+</li>
+<li class="social-item">
+    <a href="https://www.linkedin.com/in/zubair-ali-333175242" class="social-link">
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+</li>
+
+</ul>
+
             </div>
-        </div>
-        <div class="row">
-        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
-            <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/profile-img.jpg"
-                alt="profile-img">
-            <h2 class="mt-3">James Anderson</h2>
-            <ul class="list-unstyled contact-info">
-                <li><i class="fas fa-envelope me-2"></i> your.email@example.com</li>
-                <li><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
-                <li><i class="fas fa-map-marker-alt me-2"></i> Your Address</li>
-            </ul>
-            <ul class="social-icons my-5 d-flex justify-content-center">
-                <a href="#"
-                    class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i
-                        class="fa-brands fa-twitter"></i></a>
-                <a href="#"
-                    class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"
-                    class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-            </ul>
-            <h5>Technical Skills</h5>
-            <ul class="list-unstyled">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <!-- Add or remove skills as needed -->
-            </ul>
-            <h5>Personal Interests</h5>
-            <ul class="list-unstyled">
-                <li>Interest 1</li>
-                <li>Interest 2</li>
-                <li>Interest 3</li>
-                <!-- Add or remove interests as needed -->
-            </ul>
-        </div>
-        <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
-            <h3>Profile</h3>
-            <hr>
-            <p>Write a brief description of yourself, your background, and your goals. Highlight your key strengths and
-                experiences.</p>
-            <h3>Highlights of Qualifications</h3>
-            <hr>
-            <ul>
-                <li>Qualification 1</li>
-                <li>Qualification 2</li>
-                <li>Qualification 3</li>
-                <!-- Add or remove qualifications as needed -->
-            </ul>
-            <h3>Education</h3>
-            <hr>
-            <dl>
-                <dt>Year - Year</dt>
-                <dd>University/Institution</dd>
-                <dd>Degree/Program</dd>
-            </dl>
-            <h3>Additional Courses & Training</h3>
-            <hr>
-            <dl>
-                <dt>Year</dt>
-                <dd>Course/Training</dd>
-                <dd>Institution/Organization</dd>
-            </dl>
-            <h3>Work Experience</h3>
-            <hr>
-            <dl>
-                <dt>Year - Year</dt>
-                <dd>Job Position</dd>
-                <dd>Company/Organization</dd>
-                <!-- Add or remove work experience entries as needed -->
-            </dl>
-            <h3>Extracurricular Activities</h3>
-            <hr>
-            <dl>
-                <dt>Organization Name</dt>
-                <dd>Role/Position</dd>
-                <dd>Details of your involvement and contributions</dd>
-            </dl>
-        </div>
-        </div>
-        </section>
-        <!-- Contact Section -->
-        <section class="py-5" id="contact">
-            <div class="container-xxl py-5">
-                <div class="col-12 d-flex flex-column text-center justify-content-center">
-                    <h2 class="text-white">CONTACT ME</h2>
-                    <h5 class="text-white fw-normal py-2 fst-italic">Interested if I'd be the right fit for your team? Fill in
-                        this form and I will respond within 24-48 hours.</h5>
+</aside>
+
+
+
+
+
+<!--
+      - #main-content
+    -->
+
+<div class="main-content">
+
+    <!--
+        - #NAVBAR
+      -->
+
+    <nav class="navbar">
+
+        <ul class="navbar-list">
+
+            <li class="navbar-item">
+                <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+
+        </ul>
+
+    </nav>
+<!--
+        - #ABOUT
+      -->
+
+<article class="about  active" data-page="about">
+
+    <header>
+        <h2 class="h2 article-title">About me</h2>
+                </header>
+<section class="about-text">
+    <p>
+        I am Zubair Ali, a passionate Flutter developer with 2 years of experience turning creative ideas into
+        functional and
+        visually stunning mobile applications. I specialize in building seamless user experiences with clean, efficient
+        code,
+        leveraging the power of Dart and Flutter to deliver high-performance solutions. Staying ahead of the curve in
+        mobile
+        development trends is my commitment, ensuring that every app I create stands out in design and functionality.
+        For me,
+        development is more than just writing code—it's about crafting experiences that make an impact.
+    </p>
+
+    <p>
+        My job is to bring ideas to life by crafting dynamic and visually engaging mobile applications using Flutter.
+        With 2
+        years of experience, I specialize in building seamless user experiences, writing clean and efficient code, and
+        optimizing app performance. Staying updated with the latest trends and best practices in Flutter development is
+        a core
+        part of what I do, ensuring that every project I work on is both innovative and impactful.
+    </p>
+</section>
+
+<!--
+          - service
+        -->
+
+<section class="service">
+
+    <h3 class="h3 service-title">What i'm doing</h3>
+
+    <ul class="service-list">
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg
+                " alt="design icon" width="40">
+            </div>
+<div class="service-content-box">
+    <h4 class="h4 service-item-title">Mobile Apps</h4>
+
+    <p class="service-item-text">
+        Professional development of applications for iOS and Android.
+    </p>
+                            </div>
+</li>
+
+<li class="service-item">
+
+    <div class="service-icon-box">
+        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+    </div>
+    <div class="service-content-box">
+        <h4 class="h4 service-item-title">Games Development</h4>
+    
+        <p class="service-item-text">
+            Professional development of mobile games for iOS and Android.
+        </p>
+    </div>
+</li>
+
+<li class="service-item">
+
+    <div class="service-icon-box">
+        <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+    </div>
+<div class="service-content-box">
+    <h4 class="h4 service-item-title">Web development</h4>
+
+    <p class="service-item-text">
+        High-quality development of sites at the professional level.
+    </p>
+</div>
+</li>
+
+<li class="service-item">
+
+    <div class="service-icon-box">
+        <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+    </div>
+    <div class="service-content-box">
+        <h4 class="h4 service-item-title">Backend Development (NodeJS)</h4>
+
+        <p class="service-item-text">
+            I provide high quality backend services.
+        </p>
+    </div>
+</li>
+
+</ul>
+
+</section>
+<!--
+          - testimonials
+        -->
+
+<section class="testimonials">
+
+    <h3 class="h3 testimonials-title">Testimonials</h3>
+
+    <ul class="testimonials-list has-scrollbar">
+
+        <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                        Richard was hired to create a corporate identity. We were very pleased with the
+                        work done. She has a
+                        lot of experience
+                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                        ullamcous cididt
+                        consectetur adipiscing
+                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
                 </div>
-                <div class="row pt-4 mt-5">
-                    <div class="col-12">
-                        <form action="#" method="POST">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name*"
-                                            required>
-                                        <label for="floatingInput">Enter Name*</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingEmail" placeholder="Enter Email*"
-                                            required>
-                                        <label for="floatingEmail">Enter Email*</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control" id="floatingPassword"
-                                            placeholder="Enter Phone*" required>
-                                        <label for="floatingPassword">Enter Phone*</label>
-                                    </div>
+</div>
+                        </li>
+                        
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                        
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                                </figure>
+                        
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                        
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the
+                                        work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
                                 </div>
-                                <div class="form-floating col-lg-6">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage"
-                                        style="height: 205px" required></textarea>
-                                    <label for="floatingMessage" class="px-4">Enter Message*</label>
-                </div>
-                <div class="col-12 mt-5 d-flex justify-content-center">
-                    <button class="btn btn-lg btn-outline-light">SEND MESSAGE</button>
-                </div>
-            </div>
-</form>
+
+                            </div>
+                        </li>
+                        
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                        
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                                </figure>
+                        
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                        
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the
+                                        work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                        
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                                </figure>
+                        
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                        
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the
+                                        work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
 </div>
-</div>
+                        </li>
+                        
+                        </ul>
+                        
+                        </section>
+                        
+                        
+                        <!--
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          - testimonials modal
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        -->
+                        
+                        <div class="modal-container" data-modal-container>
+                        
+                            <div class="overlay" data-overlay></div>
+                        
+                            <section class="testimonials-modal">
+                        
+                                <button class="modal-close-btn" data-modal-close-btn>
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </button>
+                        
+                                <div class="modal-img-wrapper">
+                                    <figure class="modal-avatar-box">
+                                        <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                                    </figure>
+                        
+                                    <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                                </div>
+<div class="modal-content">
+
+    <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+    <time datetime="2021-06-14">14 June, 2021</time>
+
+    <div data-modal-text>
+        <p>
+            Richard was hired to create a corporate identity. We were very pleased with the work
+            done. She has a
+            lot of experience
+            and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+            ullamcous cididt
+            consectetur adipiscing
+            elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+        </p>
+                            </div>
 </div>
 </section>
-    <!-- Footer -->
-    <footer>
-        <div
-            class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-center justify-content-md-between">
-            <p>Copyright © 2023 James Anderson</p>
-            <ul class="social-icons d-flex">
-                <a href="#"
-                    class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i
-                            class="fa-brands fa-twitter"></i></small></a>
-                <a href="#"
-                    class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i
-                            class="fa-brands fa-facebook-f"></i></small></a>
-                <a href="#"
-                    class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i
-                            class="fa-brands fa-linkedin-in"></i></small></a>
-            </ul>
+
+</div>
+<!--
+          - clients
+        -->
+
+<section class="clients">
+
+    <h3 class="h3 clients-title">Companies</h3>
+
+    <ul class="clients-list has-scrollbar">
+
+        <li class="clients-item">
+            <a href="#">
+                <img src="https://crosscode.dev/wp-content/uploads/2023/03/Logo.png" alt="client logo">
+            </a>
+        </li>
+
+        <li class="clients-item">
+            <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+            </a>
+        </li>
+
+        <li class="clients-item">
+            <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+            </a>
+        </li>
+
+        <li class="clients-item">
+            <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+            </a>
+        </li>
+
+        <li class="clients-item">
+            <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+            </a>
+        </li>
+
+        <li class="clients-item">
+            <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+            </a>
+        </li>
+
+    </ul>
+
+</section>
+
+</article>
+
+
+
+
+
+<!--
+        - #RESUME
+      -->
+
+<article class="resume" data-page="resume">
+
+    <header>
+        <h2 class="h2 article-title">Resume</h2>
+    </header>
+
+    <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+            </div>
+        <ol class="timeline-list">
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Comsats University Islamabad, Lahore Campus</h4>
+                <span>2021 — 2025 (Expected)</span>
+                <p class="timeline-text">
+                    Currently pursuing a Bachelor of Science in Computer Science (BSCS). Equipped with skills in
+                    tackling complex problems, designing efficient algorithms, and developing robust software
+                    applications. Subjects learned include:
+        
+                </p>
+            </li>
+        
+        </ol>
+        </section>
+        
+        <section class="timeline">
+        
+            <div class="title-wrapper">
+                <div class="icon-box">
+                    <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
         </div>
-    </footer>
-    
-    <!-- Bootstrap script link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        <ol class="timeline-list">
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Mobile Application Developer | Flutter | Unity | Android & IOS</h4>
+                <span>2022 — Present</span>
+                <p class="timeline-text">
+                    Passionate Flutter and Unity developer specializing in building robust mobile applications and
+                    interactive games. Proficient in Dart and C#, with experience in state management, performance
+                    optimization, and debugging. Worked closely with designers and product managers to deliver
+                    high-quality, user-friendly experiences.
+                </p>
+            </li>
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Mobile App Developer | Flutter</h4>
+                <span>March 2022 — October 2022</span>
+                <p class="timeline-text">
+                    Designed, developed, and maintained high-quality mobile applications. Collaborated with
+                    cross-functional teams, optimized applications for performance, and ensured robust code quality
+                    through thorough testing and debugging.
+                </p>
+            </li>
+        
+        </ol>
+        </section>
+        
+        <section class="skill">
+        
+            <h3 class="h3 skills-title">My skills</h3>
+        
+            <ul class="skills-list content-card">
+        
+                <li class="skills-item">
+                    <div class="title-wrapper">
+                        <h5 class="h5">Flutter Development</h5>
+                        <data value="90">90%</data>
+                    </div>
+                <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+            </li>
+            
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">Unity Game Development</h5>
+                    <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+            </li>
+            
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">MERN Stack</h5>
+                    <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+            </li>
+            
+            <li class="skills-item">
+                <div class="title-wrapper">
+                    <h5 class="h5">Mobile App Development</h5>
+                    <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+            </li>
+            
+            </ul>
+            </section>
+            
+            <section class="timeline">
+            
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+            <h3 class="h3">Projects</h3>
+        </div>
+        <ol class="timeline-list">
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">PlayOn</h4>
+                <p class="timeline-text">
+                    Developed a sports matchmaking app enabling users to find practice partners. Overcame challenges
+                    like real-time matchmaking and state management to deliver a user-friendly experience.
+                </p>
+            </li>
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Hackbot</h4>
+                <p class="timeline-text">
+                    Created an educational ethical hacking game simulating real-world cybersecurity scenarios.
+                    Encourages players to improve penetration testing and vulnerability assessment skills.
+                </p>
+            </li>
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Fitness Tracking App</h4>
+                <p class="timeline-text">
+                    Built a fitness app for logging workouts and tracking progress, integrating wearable devices for
+                    seamless data synchronization.
+                </p>
+            </li>
+        
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Home Workout App</h4>
+                <p class="timeline-text">
+                    Developed an app offering personalized workout plans with video demonstrations. Ensured high-quality
+                    video streaming and a flexible workout system.
+                </p>
+            </li>
+        
+        </ol>
+        </section>
+        
+        </article>
+        
+        
+        <!--
+                        - #PORTFOLIO
+                      -->
+        
+        <article class="portfolio" data-page="portfolio">
+        
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+        
+            <section class="projects">
+        
+                <ul class="filter-list">
+        
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+        
+                    <li class="filter-item">
+                        <button data-filter-btn>Web design</button>
+                    </li>
+        
+                    <li class="filter-item">
+                        <button data-filter-btn>Applications</button>
+                    </li>
+        
+                    <li class="filter-item">
+                        <button data-filter-btn>Web development</button>
+                    </li>
+        
+                </ul>
+        
+                <div class="filter-select-box">
+        
+                    <button class="filter-select" data-select>
+        
+                        <div class="select-value" data-selecct-value>Select category</div>
+        
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+</button>
+
+<ul class="select-list">
+
+    <li class="select-item">
+        <button data-select-item>All</button>
+    </li>
+
+    <li class="select-item">
+        <button data-select-item>Web design</button>
+    </li>
+
+    <li class="select-item">
+        <button data-select-item>Applications</button>
+    </li>
+
+    <li class="select-item">
+        <button data-select-item>Web development</button>
+    </li>
+
+</ul>
+
+</div>
+<ul class="project-list">
+
+    <li class="project-item  active" data-filter-item data-category="web development">
+        <a href="#">
+
+            <figure class="project-img">
+                <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+<img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+</figure>
+
+<h3 class="project-title">Finance</h3>
+
+<p class="project-category">Web development</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="web development">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+<img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+</figure>
+
+<h3 class="project-title">Orizon</h3>
+
+<p class="project-category">Web development</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="web design">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+<img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+</figure>
+
+<h3 class="project-title">Fundo</h3>
+
+<p class="project-category">Web design</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="applications">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+<img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+</figure>
+
+<h3 class="project-title">Brawlhalla</h3>
+
+<p class="project-category">Applications</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="web design">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+<img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+</figure>
+
+<h3 class="project-title">DSM.</h3>
+
+<p class="project-category">Web design</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="web design">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+<img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+</figure>
+
+<h3 class="project-title">MetaSpark</h3>
+
+<p class="project-category">Web design</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="web development">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+<img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+</figure>
+
+<h3 class="project-title">Summary</h3>
+
+<p class="project-category">Web development</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="applications">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+<img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+</figure>
+
+<h3 class="project-title">Task Manager</h3>
+
+<p class="project-category">Applications</p>
+
+</a>
+</li>
+
+<li class="project-item  active" data-filter-item data-category="web development">
+    <a href="#">
+
+        <figure class="project-img">
+            <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+<img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+</figure>
+
+<h3 class="project-title">Arrival</h3>
+
+<p class="project-category">Web development</p>
+
+</a>
+</li>
+
+</ul>
+
+                </section>
+</article>
+
+
+
+
+
+<!--
+        - #BLOG
+      -->
+
+<article class="blog" data-page="blog">
+
+    <header>
+        <h2 class="h2 article-title">Blog</h2>
+    </header>
+
+    <section class="blog-posts">
+
+        <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+                <a href="#">
+
+                    <figure class="blog-banner-box">
+                        <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                    </figure>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <p class="blog-category">Design</p>
+
+                            <span class="dot"></span>
+
+                            <time datetime="2022-02-23">Fab 23, 2022</time>
+                        </div>
+<h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+<p class="blog-text">
+    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+</p>
+
+                                </div>
+</a>
+</li>
+
+<li class="blog-post-item">
+    <a href="#">
+
+        <figure class="blog-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+        </figure>
+
+        <div class="blog-content">
+
+            <div class="blog-meta">
+                <p class="blog-category">Design</p>
+
+                <span class="dot"></span>
+
+                <time datetime="2022-02-23">Fab 23, 2022</time>
+            </div>
+<h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+<p class="blog-text">
+    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+</p>
+
+</div>
+</a>
+</li>
+
+<li class="blog-post-item">
+    <a href="#">
+
+        <figure class="blog-banner-box">
+            <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+        </figure>
+
+        <div class="blog-content">
+
+            <div class="blog-meta">
+                <p class="blog-category">Design</p>
+
+                <span class="dot"></span>
+
+                <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+<h3 class="h3 blog-item-title">Design digest #80</h3>
+
+<p class="blog-text">
+    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
+    corporis suscipit.
+</p>
+
+</div>
+</a>
+</li>
+
+<li class="blog-post-item">
+    <a href="#">
+
+        <figure class="blog-banner-box">
+            <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+        </figure>
+
+        <div class="blog-content">
+
+            <div class="blog-meta">
+                <p class="blog-category">Design</p>
+
+                <span class="dot"></span>
+
+                <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+<h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+<p class="blog-text">
+    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation
+    ullamco laboris nisi.
+</p>
+
+</div>
+</a>
+</li>
+
+<li class="blog-post-item">
+    <a href="#">
+
+        <figure class="blog-banner-box">
+            <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+        </figure>
+
+        <div class="blog-content">
+
+            <div class="blog-meta">
+                <p class="blog-category">Design</p>
+
+                <span class="dot"></span>
+
+                <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+<h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+<p class="blog-text">
+    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua.
+</p>
+
+                                </div>
+</a>
+</li>
+
+<li class="blog-post-item">
+    <a href="#">
+
+        <figure class="blog-banner-box">
+            <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+        </figure>
+
+        <div class="blog-content">
+
+            <div class="blog-meta">
+                <p class="blog-category">Design</p>
+
+                <span class="dot"></span>
+
+                <time datetime="2022-02-23">Fab 23, 2022</time>
+            </div>
+<h3 class="h3 blog-item-title">Design digest #79</h3>
+
+<p class="blog-text">
+    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+</p>
+
+</div>
+</a>
+</li>
+
+</ul>
+
+</section>
+
+</article>
+
+
+
+
+
+<!--
+        - #CONTACT
+      -->
+
+<article class="contact" data-page="contact">
+
+    <header>
+        <h2 class="h2 article-title">Contact</h2>
+    </header>
+
+    <section class="mapbox" data-mapbox>
+        <figure>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400" height="300" loading="lazy"></iframe>
+        </figure>
+    </section>
+
+    <section class="contact-form">
+
+        <h3 class="h3 form-title">Contact Form</h3>
+
+        <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+                <input type="email" name="email" class="form-input" placeholder="Email address" required
+                    data-form-input>
+                        </div>
+<textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+<button class="form-btn" type="submit" disabled data-form-btn>
+    <ion-icon name="paper-plane"></ion-icon>
+    <span>Send Message</span>
+</button>
+
+                    </form>
+</section>
+</article>
+
+        </div>
+</main>
+
+
+
+
+
+
+<!--
+    - custom js link
+  -->
+<script src="./assets/js/script.js"></script>
+
+<!--
+    - ionicon link
+  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
