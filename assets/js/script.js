@@ -116,23 +116,38 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 // contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+ const form = document.querySelector("#contactForm");
+ const formInputs = document.querySelectorAll("[data-form-input]");
+ const formBtn = document.querySelector("[data-form-btn]");
 
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+ // Enable/disable the submit button based on form validity
+ formInputs.forEach((input) => {
+   input.addEventListener("input", () => {
+     if (form.checkValidity()) {
+       formBtn.removeAttribute("disabled");
+     } else {
+       formBtn.setAttribute("disabled", "");
+     }
+   });
+ });
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
+ form.addEventListener("submit", (e) => {
+   e.preventDefault();
 
-  });
-}
+   const fullname = document.getElementById("fullname").value;
+   const email = document.getElementById("email").value;
+   const message = document.getElementById("message").value;
+
+   const subject = encodeURIComponent(
+     `Contact Form Submission from ${fullname}`
+   );
+   const body = encodeURIComponent(
+     `Message:\n${message}\n\n\nName: ${fullname}\nEmail: ${email}`
+   );
+   const mailtoLink = `mailto:zubair.workspace@gmail.com?subject=${subject}&body=${body}`;
+
+   window.location.href = mailtoLink;
+ });
 
 
 
