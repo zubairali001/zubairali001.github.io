@@ -871,6 +871,7 @@ main {
 
 
 
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -934,7 +935,7 @@ main {
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 10fr;
   gap: 30px;
   margin-bottom: 10px;
 }
