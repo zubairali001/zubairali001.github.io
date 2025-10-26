@@ -1,1139 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zubair Ali - Unity Game Developer</title>
-    
-    <!--
-                                                                                                                                                                            - favicon
-                                                                                                                                                                          -->
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-    
-    <!--
-                                                                                                                                                                            - custom css link
-                                                                                                                                                                          -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-    <!--
-                                                                                                                                                                            - google font link
-                                                                                                                                                                          -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Zubair Ali – Unity Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&family=Fira+Code:wght@400;500&family=Orbitron:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pVHtH0VbHt1iq9xofL8JrKHny1vIsK/V1JaS9Wv/nvz2vcGdZh7PuPL5j+OdC/0vy4qtDJSJk8aXe4SXZGUxpw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     </head>
-
 <body>
-<!--
-    - #MAIN
-  -->
-
-<main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-        <div class="sidebar-info">
-
-            <figure class="avatar-box">
-                <img src="./assets/images/my-avatar.JPG" alt="Richard hanrick" width="80">
-            </figure>
-
-            <div class="info-content">
-                <h1 class="name" title="Richard hanrick">Zubair Ali</h1>
-
-                <p class="title">Unity Game Developer</p>
+    <!-- Header / Hero Section -->
+    <header id="home" class="header">
+        <nav class="navbar">
+            <div class="logo">Zubair&nbsp;Ali</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <button class="info_more-btn" data-sidebar-btn>
-                <span>Show Contacts</span>
-
-                <ion-icon name="chevron-down"></ion-icon>
-                </button>
-</div>
-
-<div class="sidebar-info_more">
-
-    <div class="separator"></div>
-
-    <ul class="contacts-list">
-
-        <li class="contact-item">
-
-            <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
+        </nav>
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Zubair Ali</h1>
+                <h2>Unity Developer – Multiplayer, AR/VR &amp; C#</h2>
+                <p>Building immersive, scalable and innovative player experiences.</p>
+                <a href="#projects" class="btn">View Projects</a>
             </div>
-
-            <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:zubair.workspace@gmail.com" class="contact-link">zubair.workspace@gmail.com</a>
-            </div>
-
-        </li>
-<li class="contact-item">
-
-    <div class="icon-box">
-        <ion-icon name="phone-portrait-outline"></ion-icon>
-    </div>
-
-    <div class="contact-info">
-        <p class="contact-title">Phone</p>
-
-        <a href="tel:+923184595649" class="contact-link">+92 318 4595649</a>
-    </div>
-
-</li>
-<li class="contact-item">
-
-    <div class="icon-box">
-        <ion-icon name="location-outline"></ion-icon>
-    </div>
-
-    <div class="contact-info">
-        <p class="contact-title">Location</p>
-
-        <address>Lahore, Pakistan</address>
-    </div>
-
-</li>
-</ul>
-
-<div class="separator"></div>
-
-<ul class="social-list">
-
-    <li class="social-item">
-        <a href="https://join.skype.com/invite/ynYFkPyxFAnH" class="social-link">
-            <ion-icon name="logo-skype"></ion-icon>
-        </a>
-    </li>
-<li class="social-item">
-    <a href="https://github.com/zubairali001" class="social-link">
-        <ion-icon name="logo-github"></ion-icon>
-    </a>
-</li>
-<li class="social-item">
-    <a href="https://www.linkedin.com/in/zubair-ali-333175242" class="social-link">
-        <ion-icon name="logo-linkedin"></ion-icon>
-    </a>
-</li>
-
-</ul>
-
-            </div>
-</aside>
-
-
-
-
-
-<!--
-      - #main-content
-    -->
-
-<div class="main-content">
-
-    <!--
-        - #NAVBAR
-      -->
-
-    <nav class="navbar">
-
-        <ul class="navbar-list">
-
-            <li class="navbar-item">
-                <button class="navbar-link  active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-                <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <!-- <li class="navbar-item">
-                <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li> -->
-
-            <!-- <li class="navbar-item">
-                <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
-
-            <li class="navbar-item">
-                <button class="navbar-link" data-nav-link>Contact</button>
-            </li> -->
-
-        </ul>
-
-    </nav>
-<!--
-        - #ABOUT
-      -->
-
-<article class="about  active" data-page="about">
-
-    <header>
-        <h2 class="h2 article-title">About me</h2>
-                </header>
-<section class="about-text">
-    <p>
-    Dedicated and skilled Unity Developer with 2 years of experience in designing and developing immersive games and
-    interactive applications. Proficient in utilizing Unity Engine, C#, and game physics to create engaging and dynamic
-    gameplay experiences. Demonstrated expertise in optimizing performance, implementing AI systems, and collaborating with
-    cross-functional teams to deliver high-quality projects. Adept at troubleshooting technical challenges and ensuring
-    seamless gameplay across multiple platforms. Passionate about pushing creative boundaries and delivering innovative
-    solutions in the gaming industry.
-    </p>
-
-    <p>
-    My job is to bring ideas to life by crafting dynamic and visually engaging games and applications using Unity.
-    With 2 years of experience, I specialize in building immersive user experiences, writing clean and efficient C# code,
-    and optimizing game performance. Staying updated with the latest trends and best practices in Unity development is a
-    core part of what I do, ensuring that every project I work on is both innovative and impactful.
-    </p>
-</section>
-
-
-<!--
-          - service
-        -->
-
-<section class="service">
-
-    <h3 class="h3 service-title">What i'm doing</h3>
-
-    <ul class="service-list">
-
-<li class="service-item">
-
-    <div class="service-icon-box">
-        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
         </div>
-        <div class="service-content-box">
-        <h4 class="h4 service-item-title">Game Development (Unity)</h4>
-        
-        <p class="service-item-text">
-            Professional development of mobile games for iOS and Android.
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <p>
+                Results‑driven Unity developer with experience delivering cross‑platform games, AR/VR apps and
+                multiplayer experiences. Skilled in C# programming, AI‑driven gameplay and performance
+                optimization, with a proven track record of publishing games to the App Store and Google Play.
+                Passionate about building immersive, scalable and innovative player experiences for international markets.
             </p>
-            </div>
-</li>
-
-
-<!-- 
-<li class="service-item">
-
-    <div class="service-icon-box">
-        <img src="./assets/images/icon-app.svg
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "
-            alt="design icon" width="40">
-    </div>
-    <div class="service-content-box">
-        <h4 class="h4 service-item-title">Mobile Apps</h4>
-    
-        <p class="service-item-text">
-            Professional development of applications for iOS and Android.
-        </p>
-    </div>
-    </li>
-    
-    <li class="service-item">
-
-    <div class="service-icon-box">
-        <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-    </div>
-<div class="service-content-box">
-    <h4 class="h4 service-item-title">Web development</h4>
-
-    <p class="service-item-text">
-        High-quality development of sites at the professional level.
-    </p>
-</div>
-</li>
-
-<li class="service-item">
-
-    <div class="service-icon-box">
-        <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-    </div>
-    <div class="service-content-box">
-        <h4 class="h4 service-item-title">Backend Development (NodeJS)</h4>
-
-        <p class="service-item-text">
-            I provide high quality backend services.
-        </p>
-    </div>
-</li> -->
-
-</ul>
-
-<br>
-<br>
-
-<section class="projects">
-
-    <ul class="filter-list">
-
-        <li class="filter-item">
-            <button class="active" data-filter-btn>Projects</button>
-        </li>
-
-
-    </ul>
-
-    <div class="filter-select-box">
-
-        <button class="filter-select" data-select>
-
-            <div class="select-value" data-selecct-value>Select category</div>
-
-            <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-            </div>
-        </button>
-
-        <ul class="select-list">
-
-            <li class="select-item">
-                <button data-select-item>All</button>
-            </li>
-
-            <li class="select-item">
-                <button data-select-item>Games</button>
-            </li>
-
-            <li class="select-item">
-                <button data-select-item>Mobile Applications</button>
-            </li>
-
-            <li class="select-item">
-                <button data-select-item>Web development</button>
-            </li>
-
-        </ul>
-
-    </div>
-    <ul class="project-list">
-
-        <li class="project-item  active" data-filter-item data-category="web development">
-            <a href="https://apps.apple.com/us/app/lilys-darkroom-scary-game/id6474727813">
-
-                <figure class="project-img">
-                    <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/63/1c/6c/631c6c46-f8ac-19f2-5954-a9b7302806a8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.png"
-                        alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Lilly DarkRoom</h3>
-
-                <p class="project-category">Game Development</p>
-
-            </a>
-        </li>
-
-        <li class="project-item  active" data-filter-item data-category="web development">
-            <a href="https://apps.apple.com/us/app/car-jump-jet-car-stunts-sim-3d/id6470313241">
-
-                <figure class="project-img">
-                    <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/01/9a/ec/019aec25-c04b-33a3-2711-bc7ed2c0354f/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/246x0w.png"
-                        alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Car Stunts</h3>
-
-                <p class="project-category">Game Development</p>
-
-            </a>
-        </li>
-
-        <li class="project-item  active" data-filter-item data-category="web design">
-            <a href="https://apps.apple.com/us/app/deer-hunter-marksman-classic/id1166866766">
-
-                <figure class="project-img">
-                    <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/a0/59/a8a0595a-f0d8-e657-cda4-7731afe831d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.png"
-                        alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Deer hunter</h3>
-
-                <p class="project-category">Game Development</p>
-
-            </a>
-        </li>
-
-        <li class="project-item  active" data-filter-item data-category="applications">
-            <a href="https://apps.apple.com/us/app/bus-driving-coaches-simulator/id6463743952">
-
-                <figure class="project-img">
-                    <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/af/af/3c/afaf3cfb-4e0e-a234-6451-a55e569e6962/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
-                        alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Bus Simulator</h3>
-
-                <p class="project-category">Game Development</p>
-
-            </a>
-        </li>
-
-    </ul>
-</section>
-
-</section>
-<!--
-          - testimonials
-        -->
-<!-- 
-<section class="testimonials">
-
-    <h3 class="h3 testimonials-title">Testimonials</h3>
-
-    <ul class="testimonials-list has-scrollbar">
-
-        <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                        Zubair was hired to design a corporate identity, and we were highly satisfied with the results. His extensive experience
-                        and commitment to addressing client needs made the process smooth and efficient. The final outcome reflected his
-                        creativity and professionalism, exceeding our expectations.
-                    </p>
-                </div>
-</div>
-                        </li>
-                        
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                        
-                                <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                                </figure>
-                        
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-                        
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>
-                                        Zubair was entrusted with creating a corporate identity, and we were thoroughly impressed with the outcome. His vast
-                                        experience and dedication to understanding client requirements ensured a seamless process and exceptional results. His
-                                        professionalism and attention to detail were truly commendable.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </li>
-                        
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                        
-                                <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                                </figure>
-                        
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-                        
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>
-                                        Zubair was brought on board to develop an innovative and engaging game for our project, and we couldn't be happier with
-                                        the results. His expertise in Unity and dedication to understanding project requirements stood out throughout the
-                                        process. The quality of his work exceeded our expectations, showcasing both technical skill and creativity.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                        
-                                <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                                </figure>
-                        
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-                        
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>
-                                        Zubair was hired to develop an engaging and immersive game for our project. We were extremely satisfied with the work
-                                        delivered. He has extensive experience in Unity development and demonstrates a strong commitment to understanding and
-                                        fulfilling client needs. His ability to create dynamic and visually stunning gameplay, combined with his
-                                        professionalism, made him an invaluable asset to our team.
-                                    </p>
-                                </div>
-</div>
-                        </li>
-                        
-                        </ul>
-                        
-                        </section>
-                        
-                        -->
-                        <!--
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          - testimonials modal
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        -->
-                        
-                        <div class="modal-container" data-modal-container>
-                        
-                            <div class="overlay" data-overlay></div>
-                        
-                            <section class="testimonials-modal">
-                        
-                                <button class="modal-close-btn" data-modal-close-btn>
-                                    <ion-icon name="close-outline"></ion-icon>
-                                </button>
-                        
-                                <div class="modal-img-wrapper">
-                                    <figure class="modal-avatar-box">
-                                        <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-                                    </figure>
-                        
-                                    <img src="./assets/images/icon-quote.svg" alt="quote icon">
-                                </div>
-<div class="modal-content">
-
-    <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-    <time datetime="2021-06-14">14 June, 2021</time>
-
-    <div data-modal-text>
-        <p>
-            Richard was hired to create a corporate identity. We were very pleased with the work
-            done. She has a
-            lot of experience
-            and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-            ullamcous cididt
-            consectetur adipiscing
-            elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-        </p>
-                            </div>
-</div>
-</section>
-
-</div>
-<!--
-          - clients
-        -->
-<!-- 
-<section class="clients">
-
-    <h3 class="h3 clients-title">Companies</h3>
-
-    <ul class="clients-list has-scrollbar">
-
-        <li class="clients-item">
-            <a href="#">
-                <img src="https://crosscode.dev/wp-content/uploads/2023/03/Logo.png" alt="client logo">
-            </a>
-        </li>
-
-        <li class="clients-item">
-            <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-            </a>
-        </li>
-
-        <li class="clients-item">
-            <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-            </a>
-        </li>
-
-        <li class="clients-item">
-            <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-            </a>
-        </li>
-
-        <li class="clients-item">
-            <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-            </a>
-        </li>
-
-        <li class="clients-item">
-            <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-            </a>
-        </li>
-
-    </ul>
-
-</section> -->
-
-
-</article>
-
-
-
-
-
-<!--
-        - #RESUME
-      -->
-
-<article class="resume" data-page="resume">
-
-    <header>
-        <h2 class="h2 article-title">Resume</h2>
-    </header>
-
-    <section class="timeline">
-
-        <div class="title-wrapper">
-            <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-        </div>
-        <ol class="timeline-list">
-
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Comsats University Islamabad, Lahore Campus</h4>
-                <span>2021 — 2025</span>
-                <p class="timeline-text">
-                    I have completed my BSCS from COMSATS Institute of Information and Technology, specializing in game development,
-                    software development and AI. I have knowledge in Unity games development.
-                </p>
-            </li>
-
-        </ol>
-    </section>
-    
-    <section class="timeline">
-    
-        <div class="title-wrapper">
-            <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-        </div>
-        <ol class="timeline-list">
-
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Unity Developer | Game Development | CrossCode</h4>
-                <span>Feb 2024 — Present</span>
-                <p class="timeline-text">
-                    Experienced Unity developer with expertise in creating immersive 2D and 3D games. Proficient in C#,
-                    physics simulations, and gameplay mechanics. Successfully led teams and delivered engaging games
-                    across various genres, ensuring optimized performance and user engagement.
-                </p>
-                </li>
-                
-                <li class="timeline-item">
-                    <h4 class="h4 timeline-item-title">Internship | Unity | CrossCode</h4>
-                    <span>Nov 2023 — Jan 2024</span>
-                    <p class="timeline-text">
-                        I completed a Unity development internship at CrossCode, where I worked on game design, mechanics implementation,
-                        and performance optimization. I gained hands-on experience in C#, Unity physics, and UI/UX design, contributing to the
-                        development of engaging and interactive games.
-                        </p>
-                        </li>
-
-        </ol>
-    </section>
-    
-    <section class="skill">
-    
-        <h3 class="h3 skills-title">My skills</h3>
-    
-        <ul class="skills-list content-card">
-    
-            <li class="skills-item">
-                <div class="title-wrapper">
-                    <h5 class="h5">Unity Game Development</h5>
-                    <data value="55">55%</data>
-                    </div>
-                <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 55%;"></div>
-                </div>
-            </li>
-
-            <li class="skills-item">
-                <div class="title-wrapper">
-                    <h5 class="h5">C# Programming</h5>
-                    <data value="60">60%</data>
-                </div>
-                <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 60%;"></div>
-                </div>
-            </li>
-</ul>
-</section>
-
-<section class="timeline">
-    <br>
-    <div class="title-wrapper">
-        <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-        </div>
-            <h3 class="h3">Projects</h3>
-        </div>
-        <ol class="timeline-list">
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Deer Hunting</h4>
-                <p class="timeline-text">
-                    Engineered a realistic first-person hunting simulation game using Unity 3D with advanced AI-driven wildlife
-                    behavior.
-                    Implemented procedural animations for realistic animal movements and raycasting techniques for precise shooting
-                    mechanics.
-                    Integrated terrain generation, weather effects, and dynamic day-night cycles to enhance immersion.
-                    Optimized game performance using LOD (Level of Detail) models and object pooling, ensuring smooth gameplay on
-                    various devices.
-                </p>
-            </li>
-            
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Mafia on Mission</h4>
-                <p class="timeline-text">
-                    Designed and developed an open-world action strategy game with mission-based gameplay, featuring AI-driven
-                    enemies and NPCs.
-                    Created a finite state machine (FSM) AI system for intelligent enemy behavior, including patrolling, chasing,
-                    and attacking mechanics.
-                    Integrated cinematic cutscenes using Unity's Timeline and Animation Rigging.
-                    Focused on performance optimization, including texture compression and memory management, for a seamless gaming
-                    experience across platforms.
-                </p>
-            </li>
-            
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Jungle Trap Scary Game</h4>
-                <p class="timeline-text">
-                    Developed a horror-adventure puzzle game utilizing real-time lighting and sound-based AI detection for an
-                    immersive experience.
-                    Implemented pathfinding algorithms (A* and NavMesh) for enemy AI tracking, ensuring unpredictable and
-                    challenging encounters.
-                    Designed procedurally generated level traps with physics-based mechanics using Unity’s Rigidbody and Colliders.
-                    Applied Post-Processing Stack for atmospheric enhancements, including depth of field, bloom, and color grading.
-                </p>
-            </li>
-            
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Lilly Dark Room Horror Game</h4>
-                <p class="timeline-text">
-                    Created a psychological horror game with narrative-driven gameplay, focusing on an eerie atmosphere and
-                    suspenseful storytelling.
-                    Implemented interactive objects and physics-based puzzles using Unity’s Event System and Raycasting.
-                    Designed a custom AI system that reacts to player actions, creating dynamic and unpredictable horror sequences.
-                    Developed an adaptive sound system that changes based on player progress, increasing tension using FMOD
-                    integration.
-                    </p>
-                    </li>
-                    
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">Scary Puzzles Horror Escape</h4>
-                        <p class="timeline-text">
-                    Built a first-person escape room-style horror game featuring complex, interactive puzzles and AI-driven enemy
-                    mechanics.
-                    Integrated real-time physics simulations to enhance environmental interactions and create dynamic challenges.
-                    Designed a modular puzzle system, allowing scalable level design with randomized elements for replayability.
-                    Applied Unity’s Shader Graph to create eerie visual effects like fog, volumetric lighting, and distortion
-                    shaders, adding to the horror ambiance.
-                </p>
-            </li>
-
-
-
-        </ol>
-    </section>
-    
-    </article>
-        
-        <!--
-                        - #PORTFOLIO
-                      -->
-        
-        <article class="portfolio" data-page="portfolio">
-        
-            <header>
-                <h2 class="h2 article-title">Portfolio</h2>
-            </header>
-        
-            <section class="projects">
-        
-                <ul class="filter-list">
-        
-                    <li class="filter-item">
-                        <button class="active" data-filter-btn>All</button>
-                    </li>
-    
-        
-                </ul>
-        
-                <div class="filter-select-box">
-        
-                    <button class="filter-select" data-select>
-        
-                        <div class="select-value" data-selecct-value>Select category</div>
-        
-                        <div class="select-icon">
-                            <ion-icon name="chevron-down"></ion-icon>
-                        </div>
-</button>
-
-<ul class="select-list">
-
-    <li class="select-item">
-        <button data-select-item>All</button>
-    </li>
-
-    <li class="select-item">
-        <button data-select-item>Games</button>
-    </li>
-
-    <li class="select-item">
-        <button data-select-item>Mobile Applications</button>
-    </li>
-
-    <li class="select-item">
-        <button data-select-item>Web development</button>
-    </li>
-
-</ul>
-
-</div>
-<ul class="project-list">
-
-    <li class="project-item  active" data-filter-item data-category="web development">
-        <a href="https://apps.apple.com/us/app/lilys-darkroom-scary-game/id6474727813">
-
-            <figure class="project-img">
-                <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/63/1c/6c/631c6c46-f8ac-19f2-5954-a9b7302806a8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.png"
-    alt="finance" loading="lazy">
-</figure>
-
-<h3 class="project-title">Lilly DarkRoom</h3>
-
-<p class="project-category">Game Development</p>
-
-</a>
-</li>
-
-<li class="project-item  active" data-filter-item data-category="web development">
-    <a href="https://apps.apple.com/us/app/car-jump-jet-car-stunts-sim-3d/id6470313241">
-
-        <figure class="project-img">
-            <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-            </div>
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/01/9a/ec/019aec25-c04b-33a3-2711-bc7ed2c0354f/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/246x0w.png"
-    alt="orizon" loading="lazy">
-</figure>
-
-<h3 class="project-title">Car Stunts</h3>
-
-<p class="project-category">Game Development</p>
-
-</a>
-</li>
-
-<li class="project-item  active" data-filter-item data-category="web design">
-    <a href="https://apps.apple.com/us/app/deer-hunter-marksman-classic/id1166866766">
-
-        <figure class="project-img">
-            <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-            </div>
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/a0/59/a8a0595a-f0d8-e657-cda4-7731afe831d8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.png"
-    alt="fundo" loading="lazy">
-</figure>
-
-<h3 class="project-title">Deer hunter</h3>
-
-<p class="project-category">Game Development</p>
-
-</a>
-</li>
-
-<li class="project-item  active" data-filter-item data-category="applications">
-    <a href="https://apps.apple.com/us/app/bus-driving-coaches-simulator/id6463743952">
-
-        <figure class="project-img">
-            <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/af/af/3c/afaf3cfb-4e0e-a234-6451-a55e569e6962/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
-    alt="brawlhalla" loading="lazy">
-</figure>
-
-<h3 class="project-title">Bus Simulator</h3>
-
-<p class="project-category">Game Development</p>
-
-</a>
-</li>
-
-</ul>
-                </section>
-</article>
-
-
-
-
-<!--
-        - #BLOG
-      -->
-<!-- 
-<article class="blog" data-page="blog">
-
-    <header>
-        <h2 class="h2 article-title">Blog</h2>
-    </header>
-
-    <section class="blog-posts">
-
-        <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-                <a href="#">
-
-                    <figure class="blog-banner-box">
-                        <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                    </figure>
-
-                    <div class="blog-content">
-
-                        <div class="blog-meta">
-                            <p class="blog-category">Design</p>
-
-                            <span class="dot"></span>
-
-                            <time datetime="2022-02-23">Fab 23, 2022</time>
-                        </div>
-<h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-<p class="blog-text">
-    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-</p>
-
-                                </div>
-</a>
-</li>
-
-<li class="blog-post-item">
-    <a href="#">
-
-        <figure class="blog-banner-box">
-            <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-        </figure>
-
-        <div class="blog-content">
-
-            <div class="blog-meta">
-                <p class="blog-category">Design</p>
-
-                <span class="dot"></span>
-
-                <time datetime="2022-02-23">Fab 23, 2022</time>
-            </div>
-<h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-<p class="blog-text">
-    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-</p>
-
-</div>
-</a>
-</li>
-
-<li class="blog-post-item">
-    <a href="#">
-
-        <figure class="blog-banner-box">
-            <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-        </figure>
-
-        <div class="blog-content">
-
-            <div class="blog-meta">
-                <p class="blog-category">Design</p>
-
-                <span class="dot"></span>
-
-                <time datetime="2022-02-23">Fab 23, 2022</time>
-                                    </div>
-<h3 class="h3 blog-item-title">Design digest #80</h3>
-
-<p class="blog-text">
-    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
-    corporis suscipit.
-</p>
-
-</div>
-</a>
-</li>
-
-<li class="blog-post-item">
-    <a href="#">
-
-        <figure class="blog-banner-box">
-            <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-        </figure>
-
-        <div class="blog-content">
-
-            <div class="blog-meta">
-                <p class="blog-category">Design</p>
-
-                <span class="dot"></span>
-
-                <time datetime="2022-02-23">Fab 23, 2022</time>
-                                    </div>
-<h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-<p class="blog-text">
-    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation
-    ullamco laboris nisi.
-</p>
-
-</div>
-</a>
-</li>
-
-<li class="blog-post-item">
-    <a href="#">
-
-        <figure class="blog-banner-box">
-            <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-        </figure>
-
-        <div class="blog-content">
-
-            <div class="blog-meta">
-                <p class="blog-category">Design</p>
-
-                <span class="dot"></span>
-
-                <time datetime="2022-02-23">Fab 23, 2022</time>
-                                    </div>
-<h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-<p class="blog-text">
-    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua.
-</p>
-
-                                </div>
-</a>
-</li>
-
-<li class="blog-post-item">
-    <a href="#">
-
-        <figure class="blog-banner-box">
-            <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-        </figure>
-
-        <div class="blog-content">
-
-            <div class="blog-meta">
-                <p class="blog-category">Design</p>
-
-                <span class="dot"></span>
-
-                <time datetime="2022-02-23">Fab 23, 2022</time>
-            </div>
-<h3 class="h3 blog-item-title">Design digest #79</h3>
-
-<p class="blog-text">
-    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-</p>
-
-</div>
-</a>
-</li>
-
-</ul>
-
-</section>
-
-</article>
--->
-
-
-
-
-<!--
-        - #CONTACT
-      -->
-
-<article class="contact" data-page="contact">
-
-    <header>
-        <h2 class="h2 article-title">Contact</h2>
-    </header>
-
-    <section class="mapbox" data-mapbox>
-        <figure>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193467.12756709525!2d74.37447203167272!3d31.493115583600183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1737904769410!5m2!1sen!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </figure>
-    </section>
-
-    <section class="contact-form">
-
-        <h3 class="h3 form-title">Contact Form</h3>
-
-        <form id="contactForm" class="form" data-form>
-
-            <div class="input-wrapper">
-                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required
-                    data-form-input>
-            </div>
-<textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button id="formSubmitBtn" class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-            </button>
-
-        </form>
         </section>
-</article>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2>Core Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>Game Development</h3>
+                <ul>
+                    <li>Unity&nbsp;3D/2D</li>
+                    <li>C# &amp; OOP</li>
+                    <li>Design Patterns</li>
+                </ul>
+            </div>
+                <div class="skill">
+                    <h3>AI &amp; Systems</h3>
+                    <ul>
+                        <li>NavMesh &amp; Pathfinding</li>
+                        <li>Behavior Trees &amp; State Machines</li>
+                        <li>Procedural Generation</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Multiplayer</h3>
+                    <ul>
+                        <li>Photon&nbsp;PUN/Fusion</li>
+                        <li>Mirror</li>
+                        <li>Netcode for GameObjects</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>AR/VR/XR</h3>
+                    <ul>
+                        <li>AR&nbsp;Foundation</li>
+                        <li>ARKit &amp; ARCore</li>
+                        <li>Oculus&nbsp;SDK &amp; OpenXR</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Graphics &amp; Rendering</h3>
+                    <ul>
+                        <li>URP &amp; HDRP</li>
+                        <li>Shader &amp; VFX Graph</li>
+                        <li>Post‑Processing</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>UI/UX</h3>
+                    <ul>
+                        <li>Unity&nbsp;UI Toolkit</li>
+                        <li>DOTween Animations</li>
+                        <li>User Interface Design</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Optimization</h3>
+                    <ul>
+                        <li>Profiling &amp; Object Pooling</li>
+                        <li>Level of Detail (LOD)</li>
+                        <li>Mobile Performance Tuning</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Workflow &amp; Tools</h3>
+                    <ul>
+                        <li>Git/GitHub/GitLab</li>
+                        <li>Jira &amp; Agile/Scrum</li>
+                        <li>Plastic&nbsp;SCM</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Platforms</h3>
+                    <ul>
+                        <li>iOS &amp; Android</li>
+                        <li>PC &amp; WebGL</li>
+                        <li>VR&nbsp;Headsets</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Additional</h3>
+                    <ul>
+                        <li>Flutter – Cross‑platform apps</li>
+                        <li>JavaScript for web &amp; games</li>
+                        <li>Node.js &amp; API integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2>Highlighted Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card project-1">
+                    <div class="project-image" style="background-image: url('images/arena2.png');"></div>
+                    <div class="project-content">
+                        <h3>Multiplayer&nbsp;Arena (2025–Ongoing)</h3>
+                        <p>A cross‑platform PvP arena built with Photon&nbsp;Fusion. Fast‑paced combat, ranked seasons, dynamic
+                            matchmaking and customizable heroes keep players coming back.</p>
+                        <button class="btn-secondary" data-modal="modal1">Learn More</button>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card project-2">
+                    <div class="project-image" style="background-image: url('images/training2.png');"></div>
+                    <div class="project-content">
+                        <h3>VR&nbsp;Safety&nbsp;Training&nbsp;Simulator (2024)</h3>
+                        <p>Immersive VR simulator for industrial safety. Physics‑based hazards, branching scenarios and performance
+                            analytics accelerate learning and compliance.</p>
+                        <button class="btn-secondary" data-modal="modal2">Learn More</button>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card project-3">
+                    <div class="project-image" style="background-image: url('images/science2.png');"></div>
+                    <div class="project-content">
+                        <h3>AR&nbsp;Science&nbsp;Learning App (2024)</h3>
+                        <p>AR app for interactive science experiments covering physics, chemistry and biology. Multi‑language lessons
+                            and a teacher dashboard enhance classroom integration.</p>
+                        <button class="btn-secondary" data-modal="modal3">Learn More</button>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="project-card project-4">
+                    <div class="project-image" style="background-image: url('images/survival2.png');"></div>
+                    <div class="project-content">
+                        <h3>AI&nbsp;Survival&nbsp;Game (2023)</h3>
+                        <p>A procedural survival game with day–night cycles, dynamic weather, base‑building and learning AI that adapts
+                            to your strategy.</p>
+                        <button class="btn-secondary" data-modal="modal4">Learn More</button>
+                    </div>
+                </div>
+                <!-- Research / Personal Projects -->
+                <div class="project-card project-5">
+                    <div class="project-image" style="background-image: url('images/dungeon2.png');"></div>
+                    <div class="project-content">
+                        <h3>Procedural&nbsp;Dungeon&nbsp;Generator</h3>
+                        <p>Algorithmic engine to create infinite dungeons using layered noise and L‑systems. Supports multiple themes
+                            and dynamic loot tables to keep exploration fresh.</p>
+                        <button class="btn-secondary" data-modal="modal5">Learn More</button>
+                    </div>
+                </div>
+                <div class="project-card project-6">
+                    <div class="project-image" style="background-image: url('images/tourism2.png');"></div>
+                    <div class="project-content">
+                        <h3>VR&nbsp;Tourism&nbsp;Prototype</h3>
+                        <p>Virtual heritage tours using high‑res photogrammetry, environmental puzzles and narrated storytelling across
+                            multiple VR platforms.</p>
+                        <button class="btn-secondary" data-modal="modal6">Learn More</button>
+                    </div>
+                </div>
+                <div class="project-card project-7">
+                    <div class="project-image" style="background-image: url('images/analytics2.png');"></div>
+                    <div class="project-content">
+                        <h3>Analytics&nbsp;Dashboard</h3>
+                        <p>Cross‑platform analytics dashboard with interactive 3D charts, retention metrics and A/B testing
+                            visualization for data‑driven design.</p>
+                        <button class="btn-secondary" data-modal="modal7">Learn More</button>
+                    </div>
+                </div>
 
+                <!-- Project Card 8: Ludo Quest – Dice Club -->
+                <div class="project-card project-8">
+                    <div class="project-image" style="background-image: url('images/ludo.png');"></div>
+                    <div class="project-content">
+                        <h3>Ludo&nbsp;Quest&nbsp;– Dice&nbsp;Club (2025)</h3>
+                        <p>Modern Ludo reinvented with mini‑board quick matches, cross‑play on mobile and tablet, tough AI opponents,
+                            narrative quests, collectible skins, dice and seasonal events.</p>
+                        <button class="btn-secondary" data-modal="modal8">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 9: Ballscapes – Ball Sort Puzzle -->
+                <div class="project-card project-9">
+                    <div class="project-image" style="background-image: url('images/ballscapes.png');"></div>
+                    <div class="project-content">
+                        <h3>Ballscapes&nbsp;– Ball&nbsp;Sort&nbsp;Puzzle (2025)</h3>
+                        <p>Relaxing ball sorting puzzle with hundreds of handcrafted stages, dynamic tube shapes, coins and skins to
+                            unlock. One‑finger controls, no timers and offline play make it perfect for all ages.</p>
+                        <button class="btn-secondary" data-modal="modal9">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            </section>
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jul&nbsp;2025&nbsp;–&nbsp;Present</div>
+                    <div class="timeline-content">
+                        <h3>Unity&nbsp;Game&nbsp;Developer – Skill&nbsp;Knight&nbsp;Studios</h3>
+                        <ul>
+                            <li>Developed a multiplayer PvP arena game with Photon Fusion, implementing matchmaking and scalable
+                                servers.</li>
+                            <li>Improved cross‑device performance by 25% through optimized rendering and memory profiling.</li>
+                            <li>Designed and deployed live‑ops systems (leaderboards, achievements, seasonal events) to enhance
+                                engagement.</li>
+                            <li>Collaborated with artists and designers to deliver AAA‑quality visuals.</li>
+                            <li>Implemented AI‑based gameplay mechanics to enrich player experience.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Apr&nbsp;2025&nbsp;–&nbsp;Jun&nbsp;2025</div>
+                    <div class="timeline-content">
+                        <h3>Unity&nbsp;Game&nbsp;Developer – Gamivision</h3>
+                        <ul>
+                            <li>Developed core gameplay systems for hyper‑casual games that achieved over one million downloads.</li>
+                            <li>Integrated Unity Ads, AdMob and IAPs to boost in‑game revenue streams.</li>
+                            <li>Reduced runtime crashes on Android by 40% through advanced optimization techniques.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sep&nbsp;2023&nbsp;–&nbsp;Mar&nbsp;2025</div>
+                    <div class="timeline-content">
+                        <h3>Unity&nbsp;Game&nbsp;Developer – Cross&nbsp;Code</h3>
+                        <ul>
+                            <li>Developed mobile and PC titles featuring procedural maps, AI‑driven NPCs and multiplayer modes.</li>
+                            <li>Published multiple titles to Google Play &amp; iOS App Store with analytics integration.</li>
+                            <li>Collaborated within a Scrum team of 8 developers and designers to ensure timely releases.</li>
+                        </ul>
+                    </div>
+                    </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jul&nbsp;2023&nbsp;–&nbsp;Sep&nbsp;2023</div>
+                    <div class="timeline-content">
+                        <h3>Unity&nbsp;Developer&nbsp;Intern – Cross&nbsp;Code</h3>
+                        <ul>
+                            <li>Supported senior developers in building UI systems and AI mechanics.</li>
+                            <li>Assisted with debugging mobile builds and reducing load times on Android.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education & Certifications Section -->
+        <section id="education" class="section education">
+            <h2>Education &amp; Certifications</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p>COMSATS University Islamabad, Lahore Campus</p>
+                    <span class="edu-date">2021 – 2025</span>
+                </div>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-card">
+                            <div class="cert-text">
+                                <span class="cert-title">Unity Certified Programmer</span>
+                                <span class="cert-year">2025</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-text">
+                                <span class="cert-title">Unity AR/VR Developer Pathway</span>
+                                <span class="cert-year">2024</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-text">
+                                <span class="cert-title">C# Programming for Game Development</span>
+                                <span class="cert-year">2023</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-text">
+                                <span class="cert-title">Agile Development Specialization</span>
+                                <span class="cert-year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p>If you'd like to discuss a project or just want to say hello, feel free to reach out.</p>
+        <div class="contact-info">
+            <p><i class="fa fa-envelope"></i> <a href="mailto:zubair.workspace@gmail.com">zubair.workspace@gmail.com</a></p>
+            <p><i class="fa fa-phone"></i> <a href="tel:+923184595649">+92&nbsp;318&nbsp;4595649</a></p>
+            <p><i class="fa fa-map-marker-alt"></i> Lahore, Pakistan</p>
         </div>
-</main>
+        <p class="portfolio-link">Also check out my <a href="https://zubairali001.github.io" target="_blank"
+                rel="noopener">online portfolio</a> for more demos and code.</p>
+        <p class="extra">Languages: English (Fluent), Urdu (Native) | Game Jams: Global Game Jam &amp; Ludum Dare (Top 20%
+            projects) | Collaboration: Experienced in async communication &amp; distributed Agile teams</p>
+    </footer>
+    <!-- Modals for project details -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>Multiplayer&nbsp;Arena</h3>
+            <p>This cross‑platform PvP arena game leverages Photon&nbsp;Fusion networking to deliver lag‑free, fast‑paced
+                combat on mobile and PC. Players choose from a roster of heroes with unique abilities, compete in ranked
+                seasons with dynamic matchmaking and skill‑based tiers, and unlock cosmetics through seasonal battle passes.
+                Dedicated servers ensure fairness while live‑ops events, esports tournaments and anti‑cheat protections keep
+                competition clean and engaging.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>VR&nbsp;Safety&nbsp;Training&nbsp;Simulator</h3>
+            <p>Designed for Oculus and HTC&nbsp;Vive, this VR safety simulator recreates hazardous workplace scenarios with
+                accurate physics, interactive equipment and branching modules. Trainees use motion‑tracked controllers to
+                perform procedures, receive real‑time feedback and can rewind to correct mistakes. Integrated analytics
+                track completion times and error rates, delivering measurable improvements in retention and compliance.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>AR&nbsp;Science&nbsp;Learning&nbsp;App</h3>
+            <p>Built with AR&nbsp;Foundation, this mobile application brings science experiments to life. Students assemble
+                molecules, simulate electric circuits and explore ecosystems as interactive AR scenes. Step‑by‑step
+                instructions, quizzes and voiceovers in multiple languages enhance learning, while teachers assign lessons
+                and track progress through a companion web dashboard.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>AI&nbsp;Survival&nbsp;Game</h3>
+            <p>An open‑world survival game where worlds are procedurally generated with varied biomes, day–night cycles and
+                dynamic weather. Players gather resources to build shelters, craft tools and battle AI enemies that learn
+                from their tactics through behavior trees and reinforcement learning. The adaptive AI adjusts difficulty,
+                ensuring that no two playthroughs are the same.</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>Procedural&nbsp;Dungeon&nbsp;Generator</h3>
+            <p>This research project combines Perlin noise, Poisson‑disc sampling and L‑system grammar to generate infinite
+                labyrinths composed of rooms, corridors, traps and treasures. The engine supports theming (caves, ruins,
+                laboratories), dynamic loot distribution and seed‑based reproducibility so designers can tailor difficulty
+                and style while avoiding repetitive layouts.</p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>VR&nbsp;Tourism&nbsp;Prototype</h3>
+            <p>Explore cultural heritage sites through this VR prototype. High‑fidelity photogrammetry transports users to
+                temples and monuments, where they solve environmental puzzles and listen to adaptive narration. Multiple
+                locomotion modes (teleport or smooth) accommodate comfort preferences, and the experience runs on both PC
+                and standalone headsets.</p>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>Cross‑Platform&nbsp;Analytics&nbsp;Dashboard</h3>
+            <p>A Node.js and Unity integration that streams game telemetry to a real‑time dashboard. Designers monitor key
+                performance indicators like retention, progression and monetization via interactive 3D charts, filter by
+                player segments and run A/B experiments. The dashboard is accessible on web and as an in‑game overlay,
+                enabling rapid data‑driven decision making.</p>
+        </div>
+    </div>
 
+    <!-- Modal 8: Ludo Quest – Dice Club -->
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>Ludo&nbsp;Quest&nbsp;– Dice&nbsp;Club</h3>
+            <p>This Unity‑powered board game modernizes the beloved game of Ludo with both competitive multiplayer and a
+                narrative‑driven solo quest. Players jump into quick matches on mini boards, battle tough AI offline or
+                challenge friends online via cross‑play between iOS and Android. The quest mode introduces handcrafted
+                levels with special objectives, boss encounters and a storyline where you rescue a princess and gather
+                magical artifacts. Collectible pawns, dice and board skins add personality, social features let you chat and
+                add friends, and seasonal events with leaderboards keep the experience fresh and family‑friendly.</p>
+        </div>
+    </div>
 
-
-
-
-
-<!--
-    - custom js link
-  -->
-<script src="./assets/js/script.js"></script>
-
-<!--
-    - ionicon link
-  -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <!-- Modal 9: Ballscapes – Ball Sort Puzzle -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal-close>&times;</span>
+            <h3>Ballscapes&nbsp;– Ball&nbsp;Sort&nbsp;Puzzle</h3>
+            <p>Ballscapes is a zen‑like colour sorting game developed in Unity. Players tap tubes to rearrange colourful
+                balls, matching colours with as few moves as possible. Hundreds of handcrafted stages progress from casual
+                warm‑ups to mind‑bending puzzles, with tube shapes and capacities changing to add variety. Daily challenges
+                and progression unlock coins used to purchase skins and themes, while optional hints and extra tubes prevent
+                frustration. Haptic feedback, a soothing soundtrack and unlimited time make it ideal for all ages, and
+                everything plays offline.</p>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>
