@@ -167,18 +167,25 @@ a {
     left: 0;
     right: 0;
     height: var(--nav-height);
-    background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        border-bottom: 1px solid var(--color-glass-border);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(10, 10, 10, 0.3);
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 
+                0 2px 8px rgba(99, 102, 241, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
     z-index: 1000;
     transition: var(--transition-base);
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.95);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    background: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3), 
+                0 2px 12px rgba(99, 102, 241, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .nav-container {
