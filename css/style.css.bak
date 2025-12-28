@@ -560,6 +560,12 @@ a {
     .square-2 {
         width: 35px;
         height: 35px;
+        background: rgba(139, 92, 246, 0.3);
+        border: 2px solid rgba(139, 92, 246, 0.5);
+        top: 85%;
+        right: 15%;
+        animation-duration: 20s;
+        animation-delay: -15s;
         transform: rotate(45deg);
     }
     
