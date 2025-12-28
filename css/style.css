@@ -1190,6 +1190,11 @@ a {
     color: white;
 }
 
+.skill-icon i {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 1;
+}
 .skill-card h3 {
     font-size: var(--font-size-xl);
     margin-bottom: var(--spacing-sm);
