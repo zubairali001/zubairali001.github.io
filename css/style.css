@@ -4,16 +4,16 @@
 
 /* --- Variables --- */
 :root {
-    --bg:         #06060e;
-    --bg-alt:     #0c0c18;
-    --surface:    rgba(255,255,255,0.04);
-    --border:     rgba(255,255,255,0.08);
-    --text:       #e8e8f0;
-    --text-dim:   #8080a0;
-    --accent:     #6366f1;
-    --accent-h:   #818cf8;
-    --accent2:    #06b6d4;
-    --accent2-h:  #22d3ee;
+    --bg:         #ffffff;
+    --bg-alt:     #f5f5fb;
+    --surface:    rgba(0,0,0,0.03);
+    --border:     rgba(0,0,0,0.09);
+    --text:       #111827;
+    --text-dim:   #6b7280;
+    --accent:     #4f46e5;
+    --accent-h:   #6366f1;
+    --accent2:    #0891b2;
+    --accent2-h:  #06b6d4;
     --radius:     12px;
     --radius-sm:  8px;
     --nav-h:      64px;
@@ -46,7 +46,7 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
    NAV
    =========================================== */
 .navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;transition:background .3s,border-color .3s,box-shadow .3s;border-bottom:1px solid transparent}
-.navbar.scrolled{background:rgba(6,6,14,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom-color:var(--border);box-shadow:0 4px 30px rgba(0,0,0,.4)}
+.navbar.scrolled{background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom-color:var(--border);box-shadow:0 2px 20px rgba(0,0,0,.08)}
 .nav-container{max-width:var(--max-w);margin:0 auto;padding:0 1.25rem;height:100%;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{font-size:1.3rem;font-weight:800;letter-spacing:-.03em}
 .logo-dot{color:var(--accent)}
@@ -68,12 +68,12 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
 /* Background */
 .hero-bg{position:absolute;inset:0;overflow:hidden;z-index:0}
-.gradient-orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.35;animation:orbFloat 20s ease-in-out infinite}
+.gradient-orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.12;animation:orbFloat 20s ease-in-out infinite}
 .orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(99,102,241,.7),transparent 70%);top:-15%;left:-10%;animation-delay:0s}
 .orb-2{width:400px;height:400px;background:radial-gradient(circle,rgba(6,182,212,.5),transparent 70%);top:50%;right:-8%;animation-delay:-7s;animation-duration:25s}
 .orb-3{width:350px;height:350px;background:radial-gradient(circle,rgba(139,92,246,.45),transparent 70%);bottom:5%;left:25%;animation-delay:-14s;animation-duration:28s}
 @keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-25px) scale(1.08)}66%{transform:translate(-20px,20px) scale(.92)}}
-.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(99,102,241,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.04) 1px,transparent 1px);background-size:60px 60px;opacity:.4}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.04) 1px,transparent 1px);background-size:60px 60px;opacity:.6}
 
 /* Particles via JS — just the container */
 .particles{position:absolute;inset:0;pointer-events:none}
@@ -101,7 +101,7 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 /* Hero Stats */
 .hero-stats{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
 .stat{text-align:center}
-.stat-num{display:block;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;background:linear-gradient(135deg,#fff,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-num{display:block;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;background:linear-gradient(135deg,var(--text),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .stat-label{font-size:.78rem;color:var(--text-dim);margin-top:.15rem}
 .stat-divider{width:1px;height:40px;background:var(--border)}
 
@@ -124,7 +124,9 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
    SERVICES
    =========================================== */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
-.service-card{padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);transition:border-color .3s,transform .3s,box-shadow .3s}
+.service-card{padding:2rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);transition:border-color .3s,transform .3s,box-shadow .3s;box-shadow:0 2px 12px rgba(0,0,0,.06);position:relative;overflow:hidden}
+.service-card::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.06) 50%,transparent 60%);transform:translateX(-100%);transition:transform .6s;pointer-events:none}
+.service-card:hover::after{transform:translateX(120%)}
 .service-card:hover{border-color:rgba(99,102,241,.3);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
 .service-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff;margin-bottom:1.25rem}
 .icon-unity{background:linear-gradient(135deg,var(--accent),#8b5cf6)}
@@ -144,9 +146,9 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
-.project-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s,opacity .4s}
-.project-card:hover{transform:translateY(-5px);border-color:rgba(99,102,241,.3);box-shadow:0 16px 50px rgba(0,0,0,.35)}
-.project-card.hide{display:none}
+.project-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:opacity .25s,transform .25s,border-color .3s,box-shadow .3s;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.project-card.hiding{opacity:0;transform:scale(0.94)!important;pointer-events:none}
+.project-card:hover{transform:translateY(-5px) perspective(800px);border-color:rgba(99,102,241,.3);box-shadow:0 16px 50px rgba(0,0,0,.2)}
 
 .project-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg)}
 .project-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
@@ -174,8 +176,8 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .about-text p{color:var(--text-dim);margin-bottom:1rem;font-size:.95rem}
 .about-skills h3{font-size:1.1rem;font-weight:700;margin-bottom:1rem}
 .tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
-.tech-item{display:flex;align-items:center;gap:.6rem;padding:.65rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:.82rem;color:var(--text-dim);transition:border-color .2s}
-.tech-item:hover{border-color:var(--accent)}
+.tech-item{display:flex;align-items:center;gap:.6rem;padding:.65rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:.82rem;color:var(--text-dim);transition:border-color .2s,transform .2s,box-shadow .2s}
+.tech-item:hover{border-color:var(--accent);transform:scale(1.04);box-shadow:0 0 16px rgba(99,102,241,.15)}
 .tech-item i{color:var(--accent);font-size:.9rem;width:16px;text-align:center}
 
 /* ===========================================
@@ -231,7 +233,7 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 }
 
 @media(max-width:768px){
-    .nav-menu{position:fixed;left:-100%;top:var(--nav-h);flex-direction:column;background:rgba(6,6,14,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);width:100%;text-align:center;transition:.3s;padding:2rem 0;gap:1rem;border-top:1px solid var(--border)}
+    .nav-menu{position:fixed;left:-100%;top:var(--nav-h);flex-direction:column;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);width:100%;text-align:center;transition:.3s;padding:2rem 0;gap:1rem;border-top:1px solid var(--border)}
     .nav-menu.active{left:0}
     .nav-cta{display:none}
     .hamburger{display:flex}
@@ -260,3 +262,43 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
     *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ===========================================
+   CV DOWNLOAD BUTTON
+   =========================================== */
+.btn-cv{border:1px solid var(--accent);color:var(--accent)}
+.btn-cv:hover{background:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(99,102,241,.3)}
+
+/* ===========================================
+   FLUTTER PROJECT PLACEHOLDERS
+   =========================================== */
+.flutter-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:rgba(255,255,255,.55)}
+.fp-1{background:linear-gradient(135deg,#0891b2,#6366f1)}
+.fp-2{background:linear-gradient(135deg,#7c3aed,#06b6d4)}
+.fp-3{background:linear-gradient(135deg,#0f766e,#0891b2)}
+.badge-flutter{background:rgba(6,182,212,.15);color:#06b6d4;border:1px solid rgba(6,182,212,.3)}
+
+/* ===========================================
+   SYSTEM DARK MODE
+   =========================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg:       #06060e;
+        --bg-alt:   #0c0c18;
+        --surface:  rgba(255,255,255,0.04);
+        --border:   rgba(255,255,255,0.08);
+        --text:     #e8e8f0;
+        --text-dim: #8080a0;
+        --accent:   #6366f1;
+        --accent-h: #818cf8;
+        --accent2:  #06b6d4;
+        --accent2-h:#22d3ee;
+    }
+    .navbar.scrolled{background:rgba(6,6,14,.85);box-shadow:0 4px 30px rgba(0,0,0,.4)}
+    .nav-menu{background:rgba(6,6,14,.97)}
+    .gradient-orb{opacity:.35}
+    .grid-bg{background-image:linear-gradient(rgba(99,102,241,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.04) 1px,transparent 1px);opacity:.4}
+    .project-card{background:var(--surface);box-shadow:none;border-color:var(--border)}
+    .service-card{background:var(--surface);box-shadow:none}
+    .edu-card,.exp-content,.cert-item,.contact-card,.tech-item{background:var(--surface)}
+}
