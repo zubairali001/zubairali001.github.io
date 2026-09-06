@@ -1,9 +1,11 @@
 /* Zubair Ali — Portfolio JS */
 
-// --- Navbar scroll ---
+// --- Navbar scroll + progress bar ---
 const navbar = document.getElementById('navbar');
+const scrollBar = document.getElementById('scrollProgress');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollBar) scrollBar.style.width = (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%';
 });
 
 // --- Mobile menu ---
@@ -59,6 +61,11 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
+// --- Staggered card entrance ---
+document.querySelectorAll('.projects-grid .project-card').forEach((c, i) => {
+    c.style.transitionDelay = `${(i % 4) * 60}ms`;
+});
+
 // --- Stat counter ---
 const countObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
@@ -73,7 +80,7 @@ const countObs = new IntersectionObserver(entries => {
         const start = performance.now();
         const tick = now => {
             const p = Math.min((now - start) / dur, 1);
-            const ease = 1 - Math.pow(1 - p, 3); // ease-out cubic
+            const ease = 1 - Math.pow(1 - p, 3);
             numEl.textContent = Math.floor(target * ease) + suffix;
             if (p < 1) requestAnimationFrame(tick);
         };
@@ -83,18 +90,50 @@ const countObs = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 document.querySelectorAll('.stat[data-target]').forEach(el => countObs.observe(el));
 
-// --- Project filter ---
+// --- Project filter (animated) ---
 const filterBtns = document.querySelectorAll('.filter-btn');
 const cards = document.querySelectorAll('.project-card');
+
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const f = btn.dataset.filter;
         cards.forEach(c => {
-            c.classList.toggle('hide', f !== 'all' && c.dataset.status !== f);
+            const match = f === 'all' || c.dataset.status === f;
+            if (match) {
+                c.hidden = false;
+                // next frame so display:block registers before transition
+                requestAnimationFrame(() => c.classList.remove('hiding'));
+            } else {
+                c.classList.add('hiding');
+                c.addEventListener('transitionend', () => {
+                    if (c.classList.contains('hiding')) c.hidden = true;
+                }, { once: true });
+            }
         });
     });
+});
+
+// --- 3D card tilt ---
+document.querySelectorAll('.project-card, .service-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const rx = ((e.clientY - r.top) / r.height - 0.5) * 8;
+        const ry = ((e.clientX - r.left) / r.width - 0.5) * -8;
+        card.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-5px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+    });
+});
+
+// --- Hero cursor spotlight ---
+const heroEl = document.querySelector('.hero');
+heroEl?.addEventListener('mousemove', e => {
+    const r = heroEl.getBoundingClientRect();
+    heroEl.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    heroEl.style.setProperty('--my', (e.clientY - r.top) + 'px');
 });
 
 // --- Particles ---
