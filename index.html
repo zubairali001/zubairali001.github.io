@@ -3,773 +3,560 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zubair Ali - Game Developer & Software Engineer</title>
-    <meta name="description"
-        content="Game Developer & Mobile App Specialist with 3+ years experience in Unity, Flutter, and cross-platform development.">
-    <!-- Google Fonts -->
+    <title>Zubair Ali — Unity & Flutter Developer</title>
+    <meta name="description" content="Unity Game Developer & Flutter App Specialist. 20+ published titles, 10M+ downloads. Available for hire.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome - Local -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Zubair Ali</a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#work" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">ZA<span class="logo-dot">.</span></a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#work" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
-<!-- Hero Section -->
+    </div>
+</nav>
+
+<!-- Hero -->
 <section id="home" class="hero">
-    <!-- Animated Background -->
-    <div class="hero-background">
+    <div class="hero-bg">
         <div class="gradient-orb orb-1"></div>
         <div class="gradient-orb orb-2"></div>
         <div class="gradient-orb orb-3"></div>
-        <div class="grid-background"></div>
-        <!-- Gaming Elements -->
-        <div class="scanlines"></div>
-        <div class="hexagon-pattern"></div>
-        <div class="circuit-lines">
-            <div class="circuit-line line-1"></div>
-            <div class="circuit-line line-2"></div>
-            <div class="circuit-line line-3"></div>
-        </div>
-        <div class="hud-corners">
-            <div class="corner top-left"></div>
-            <div class="corner top-right"></div>
-            <div class="corner bottom-left"></div>
-            <div class="corner bottom-right"></div>
-        </div>
-        <div class="gaming-shapes">
-            <div class="shape triangle-1"></div>
-            <div class="shape triangle-2"></div>
-            <div class="shape square-1"></div>
-            <div class="shape square-2"></div>
-            <div class="shape diamond-1"></div>
-        </div>
-        <div class="particles">
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-            <span class="particle"></span>
-        </div>
+        <div class="grid-bg"></div>
+        <div class="particles" id="particles"></div>
     </div>
-    <div class="hero-container">
-        <div class="hero-badge fade-in">Software Engineer</div>
-        <h1 class="hero-title fade-in">Zubair Ali</h1>
-        <h2 class="hero-subtitle fade-in">Game Developer & Mobile App Specialist</h2>
-        <p class="hero-description fade-in">
-            Specialized in Game Development, Mobile Applications & Cross-Platform Solutions
-            Expert in Unity, Flutter, C# | 3+ Years Building Innovative Software Across Multiple Platforms
+    <div class="hero-content">
+        <div class="hero-badge anim-fade" style="--d:0">
+            <span class="badge-dot"></span>
+            Available for Projects
+        </div>
+        <h1 class="hero-title anim-fade" style="--d:1">
+            I build <span class="text-gradient">games</span> &amp;
+            <span class="text-gradient-alt">apps</span> that people love
+        </h1>
+        <p class="hero-sub anim-fade" style="--d:2">
+            Unity Game Developer &amp; Flutter App Specialist with 3+ years shipping
+            cross-platform experiences — from hyper-casual hits to multiplayer arenas.
         </p>
-        <div class="hero-buttons fade-in">
-            <a href="#work" class="btn btn-primary">Explore Portfolio</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <div class="hero-btns anim-fade" style="--d:3">
+            <a href="#work" class="btn btn-primary">
+                <i class="fas fa-th-large"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+        </div>
+        <div class="hero-stats anim-fade" style="--d:4">
+            <div class="stat" data-target="20" data-suffix="+">
+                <span class="stat-num">0</span>
+                <span class="stat-label">Published Titles</span>
             </div>
-            <div class="hero-stats fade-in">
-                <div class="stat">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Published Games</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">3+</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Technologies</div>
-                </div>
-        </div>
-        <!-- Animated Tags -->
-        <div class="hero-tags fade-in">
-            <span class="tag">Unity 3D/2D</span>
-            <span class="tag">Flutter</span>
-            <span class="tag">Mobile First</span>
-            <span class="tag">Cross-Platform</span>
-            <span class="tag">Multiplayer</span>
-            <span class="tag">AR/VR</span>
-        </div>
-        </div>
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+            <div class="stat-divider"></div>
+            <div class="stat" data-target="10" data-suffix="M+">
+                <span class="stat-num">0</span>
+                <span class="stat-label">Downloads</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat" data-target="3" data-suffix="+">
+                <span class="stat-num">0</span>
+                <span class="stat-label">Years Experience</span>
             </div>
         </div>
-    </section>
-    
-    <!-- Work Section -->
-    <section id="work" class="section work-section">
-        <div class="container">
-            <div class="section-header fade-in-section">
-                <span class="section-label">My Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Showcasing published mobile games and applications with <strong>20+ live
-                        titles</strong> on App Store & Google Play</p>
-            </div>
-<div class="projects-grid">
-    <!-- Project 1: Ludo -->
-    <div class="project-card fade-in-section">
-        <div class="project-info">
-            <div class="project-meta">
-                <span class="project-category">Board Game</span>
-                <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">Ludo - Pachisi 10 Board Game</h3>
-                        <p class="project-description">
-                            Modern Ludo with multiplayer modes, AI opponents, and cross-platform play. Features quick matches, collectible
-                            skins, and engaging gameplay for iOS and Android.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>C#</span>
-                            <span>Multiplayer</span>
-                        </div>
-                        <a href="https://apps.apple.com/au/app/ludo-pachisi-10-board-game/id1441604477" target="_blank" class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                        </div>
-                        </div>
-<!-- Project 2: Ball Escapes -->
-<div class="project-card fade-in-section">
-    <div class="project-info">
-        <div class="project-meta">
-            <span class="project-category">Puzzle Game</span>
-            <span class="project-year">2024</span>
-        </div>
-                        <h3 class="project-title">Ball Escapes - Sort Balls Puzzle</h3>
-                        <p class="project-description">
-                            Relaxing ball sorting puzzle with hundreds of handcrafted levels. One-finger controls, offline play, and beautiful
-                            themes make it perfect for all ages.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Mobile</span>
-                            <span>Casual</span>
-                        </div>
-                        <a href="https://apps.apple.com/au/app/sort-balls-relax-ballscapes/id1554053656" target="_blank" class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                        </div>
-                        </div>
-<!-- Project 3: Scarface -->
-<div class="project-card fade-in-section">
-    <div class="project-info">
-        <div class="project-meta">
-            <span class="project-category">Horror Game</span>
-            <span class="project-year">2025</span>
-        </div>
-                        <h3 class="project-title">Scarface - Scary Game 2026</h3>
-                        <p class="project-description">
-                            Immersive horror survival game with intense atmosphere, challenging gameplay, and thrilling scares. Navigate through
-                            dark environments and survive terrifying encounters.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>3D</span>
-                            <span>Horror</span>
-                        </div>
-                        <a href="https://apps.apple.com/ca/app/scarface-scary-game-2026/id6751227596" target="_blank" class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    </div>
-
-                <!-- Project 4: Jeep Driving -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Simulation</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">Jeep Driving Games - Offroading</h3>
-                        <p class="project-description">
-                            Realistic offroad driving simulator featuring challenging terrain, multiple vehicles, and authentic physics.
-                            Experience extreme offroad adventures.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Physics</span>
-                            <span>3D</span>
-                        </div>
-                        <a href="https://apps.apple.com/ca/app/jeep-driving-games-offroading/id6449359294" target="_blank" class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                        </div>
-                </div>
-<!-- Project 5: Club Manager -->
-<div class="project-card fade-in-section">
-    <div class="project-info">
-        <div class="project-meta">
-            <span class="project-category">Management</span>
-            <span class="project-year">2025</span>
-        </div>
-                        <h3 class="project-title">Club & Bar Manager Simulator</h3>
-                        <p class="project-description">
-                            Manage and grow your own club empire. Handle customers, hire staff, upgrade facilities, and make strategic decisions
-                            to build the ultimate entertainment venue.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Simulation</span>
-                            <span>Strategy</span>
-                        </div>
-                        <a href="https://apps.apple.com/ca/app/club-bar-manager-simulator/id6754281343" target="_blank" class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 6: Deer Hunter -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Simulation</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">Wild Deer Hunter - Hunting Games</h3>
-                        <p class="project-description">
-                            Realistic hunting simulation with advanced AI, beautiful environments, and authentic hunting mechanics. Track and
-                            hunt wildlife across diverse terrains.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>AI</span>
-                            <span>3D Graphics</span>
-                        </div>
-                        <a href="https://apps.apple.com/us/app/wild-deer-hunter-hunting-games/id6443416280" target="_blank"
-                            class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 7: Cooking Empire -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Time Management</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Cooking Empire - Cooking Game</h3>
-                        <p class="project-description">
-                            Fast-paced time management cooking game. Prepare delicious dishes, serve customers quickly, upgrade your kitchen,
-                            and build a culinary empire across multiple restaurants.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Casual</span>
-                            <span>Mobile</span>
-                        </div>
-                        <a href="https://apps.apple.com/pk/app/cooking-empire-cooking-game/id6478499863" target="_blank" class="project-link">
-                            View on App Store <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Portfolio Project 8: Euchre (Development) -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Card Game</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Euchre Card Game</h3>
-                        <p class="project-description">
-                            Classic Euchre card game in development. Features smart AI, multiplayer modes, and intuitive gameplay
-                            mechanics for both beginners and experienced players.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>AI</span>
-                            <span>Multiplayer</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">In Development</button>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Project 9: Crazy Eights (Development) -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Card Game</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Crazy Eights Card Game</h3>
-                        <p class="project-description">
-                            Popular card game currently in development phase. Will include multiple game modes, online multiplayer, and
-                            customizable rules for endless fun.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Cards</span>
-                            <span>Casual</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">In Development</button>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Project 10: Squirrel Simulator (Development) -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Simulation</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Squirrel Simulator</h3>
-                        <p class="project-description">
-                            Whimsical animal simulation game in development. Explore forests, collect nuts, interact with wildlife, and
-                            experience life as a squirrel in an open world.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>3D</span>
-                            <span>Open World</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">In Development</button>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Project 11: Lilly Darkroom (Development) -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Adventure</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Lilly Darkroom</h3>
-                        <p class="project-description">
-                            Mysterious adventure game currently under development. Features atmospheric environments, puzzle-solving
-                            mechanics, and an engaging narrative experience.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Puzzle</span>
-                            <span>Narrative</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">In Development</button>
-                    </div>
-                </div>
-                
-                <!-- Project Card 1: Multiplayer Arena -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Multiplayer</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Multiplayer Arena</h3>
-                        <p class="project-description">
-                            A cross-platform PvP arena built with Photon Fusion. Fast-paced combat, ranked seasons, dynamic matchmaking
-                            and customizable heroes keep players coming back.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Photon Fusion</span>
-                            <span>PvP</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Ongoing</button>
-                    </div>
-                </div>
-                
-                <!-- Project Card 2: VR Safety Training -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">VR Training</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">VR Safety Training Simulator</h3>
-                        <p class="project-description">
-                            Immersive VR simulator for industrial safety. Physics-based hazards, branching scenarios and performance
-                            analytics accelerate learning and compliance.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>VR</span>
-                            <span>Oculus</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Concept</button>
-                    </div>
-                </div>
-                
-                <!-- Project Card 3: AR Science Learning -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">AR Education</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-title">AR Science Learning App</h3>
-                        <p class="project-description">
-                            AR app for interactive science experiments covering physics, chemistry and biology. Multi-language lessons
-                            and a teacher dashboard enhance classroom integration.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>AR Foundation</span>
-                            <span>Education</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Concept</button>
-                    </div>
-                </div>
-                
-                <!-- Project Card 4: AI Survival Game -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Survival</span>
-                            <span class="project-year">2023</span>
-                        </div>
-                        <h3 class="project-title">AI Survival Game</h3>
-                        <p class="project-description">
-                            A procedural survival game with day-night cycles, dynamic weather, base-building and learning AI that adapts
-                            to your strategy.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>AI</span>
-                            <span>Procedural</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Concept</button>
-                    </div>
-                </div>
-                
-                <!-- Project Card 5: Procedural Dungeon -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Research</span>
-                            <span class="project-year">2023</span>
-                        </div>
-                        <h3 class="project-title">Procedural Dungeon Generator</h3>
-                        <p class="project-description">
-                            Algorithmic engine to create infinite dungeons using layered noise and L-systems. Supports multiple themes
-                            and dynamic loot tables to keep exploration fresh.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Algorithms</span>
-                            <span>PCG</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Research</button>
-                    </div>
-                </div>
-                <!-- Project Card 6: VR Tourism -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">VR Experience</span>
-                            <span class="project-year">2023</span>
-                        </div>
-                        <h3 class="project-title">VR Tourism Prototype</h3>
-                        <p class="project-description">
-                            Virtual heritage tours using high-res photogrammetry, environmental puzzles and narrated storytelling across
-                            multiple VR platforms.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>VR</span>
-                            <span>Photogrammetry</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Prototype</button>
-                    </div>
-                </div>
-                
-                <!-- Project Card 7: Analytics Dashboard -->
-                <div class="project-card fade-in-section">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Tools</span>
-                            <span class="project-year">2023</span>
-                        </div>
-                        <h3 class="project-title">Analytics Dashboard</h3>
-                        <p class="project-description">
-                            Cross-platform analytics dashboard with interactive 3D charts, retention metrics and A/B testing
-                            visualization for data-driven design.
-                        </p>
-                        <div class="project-tags">
-                            <span>Unity</span>
-                            <span>Node.js</span>
-                            <span>Analytics</span>
-                        </div>
-                        <button class="btn btn-secondary" disabled style="opacity: 0.6; cursor: not-allowed;">Internal Tool</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="section-header fade-in-section">
-                <span class="section-label">About Me</span>
-                <h2 class="section-title">Know Who I Am</h2>
-            </div>
-            <div class="about-content fade-in-section">
-                <div class="about-text">
-                    <p class="lead">
-                        Hi, I'm Zubair Ali, a passionate Software Engineer with over <strong>3 years of hands-on experience</strong>
-                        crafting engaging games and mobile applications across multiple genres and platforms.
-                    </p>
-                    <p>
-                        I specialize in board and card games like Ludo and Crazy Eights, simulation games like Deer Hunter, and
-                        management games like Cooking Empire. My technical expertise spans modular Unity architectures, AI with
-                        finite state machines, multiplayer systems using Photon Fusion, and optimized asset management with
-                        Addressables.
-                    </p>
-                    <p>
-                        I'm passionate about creating scalable, engaging gameplay experiences that delight players and drive
-                        success. Whether it's building robust multiplayer systems, implementing complex AI behaviors, or optimizing
-                        performance for mobile platforms, I bring dedication and technical excellence to every project.
-                    </p>
-                </div>
-
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Published Games</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10000000+</div>
-                        <div class="stat-label">Downloads</div>
-                    </div>
-                </div>
-
-                <!-- Experience Timeline -->
-                <div class="experience-timeline">
-                    <h3>Brief of My Journey</h3>
-                    <div class="timeline-items">
-                        <div class="timeline-item">
-                            <div class="timeline-period">Jul 2025 - Present</div>
-                            <h4>Unity Game Developer</h4>
-                            <p class="company">Skill Knight Studios</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-period">Apr 2025 - Jun 2025</div>
-                            <h4>Unity Game Developer</h4>
-                            <p class="company">Gamivision</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-period">Sep 2023 - Mar 2025</div>
-                            <h4>Unity Game Developer</h4>
-                            <p class="company">Cross Code</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-period">2021 - 2025</div>
-                            <h4>Bachelor of Computer Science</h4>
-                            <p class="company">COMSATS University Islamabad</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </section>
-<!-- Skills Section -->
-<section id="skills" class="section skills-section">
-    <div class="container">
-        <div class="section-header fade-in-section">
-            <span class="section-label">Expertise</span>
-            <h2 class="section-title">Core Skills & Technologies</h2>
-        </div>
-<div class="skills-grid">
-    <div class="skill-card fade-in-section">
-        <div class="skill-icon">
-            <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Game Development</h3>
-                    <p>Unity 3D/2D, C# & OOP, Design Patterns, Game Architecture</p>
-                    </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile Development</h3>
-                    <p>Flutter & Dart, iOS & Android Native, Cross-Platform Apps</p>
-                    </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Multiplayer Systems</h3>
-                    <p>Photon PUN/Fusion, Mirror, Netcode for GameObjects</p>
-                </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-robot"></i>
     </div>
-                    <h3>AI & Systems</h3>
-                    <p>NavMesh, Behavior Trees, State Machines, Procedural Generation</p>
-                    </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-vr-cardboard"></i>
-                    </div>
-                    <h3>AR/VR/XR</h3>
-                    <p>AR Foundation, ARKit & ARCore, Oculus SDK & OpenXR</p>
-                    </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Graphics & Rendering</h3>
-                    <p>URP & HDRP, Shader Graph, VFX, Post-Processing</p>
-                    </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Optimization</h3>
-                    <p>Profiling, Object Pooling, LOD, Mobile Performance Tuning</p>
-                    </div>
-<div class="skill-card fade-in-section">
-    <div class="skill-icon">
-        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Workflow & Tools</h3>
-                    <p>Git/GitHub, Jira, Agile/Scrum, CI/CD, Plastic SCM</p>
-                </div>
-                </div>
-                </div>
-                </section>
-<!-- Experience Section -->
-<section id="experience" class="section experience-section">
+    <div class="scroll-cue anim-fade" style="--d:5">
+        <div class="mouse"><div class="wheel"></div></div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section">
     <div class="container">
-        <div class="section-header fade-in-section">
-            <span class="section-label">Career</span>
-            <h2 class="section-title">Professional Experience</h2>
+        <div class="section-head fade-up">
+            <span class="section-tag">What I Do</span>
+            <h2>Services</h2>
+            <p>End-to-end development from concept to App Store launch</p>
         </div>
-        <div class="timeline fade-in-section">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Jul 2025 – Present</div>
-                <div class="timeline-content">
-                    <h3>Unity Game Developer</h3>
-                    <p class="company">Skill Knight Studios</p>
-                    <ul>
-                        <li>Developed a multiplayer PvP arena game with Photon Fusion, implementing matchmaking and
-                            scalable servers.</li>
-                        <li>Improved cross-device performance by 25% through optimized rendering and memory profiling.
-                        </li>
-                        <li>Designed and deployed live-ops systems (leaderboards, achievements, seasonal events) to
-                            enhance engagement.</li>
-                        <li>Collaborated with artists and designers to deliver AAA-quality visuals.</li>
-                        <li>Implemented AI-based gameplay mechanics to enrich player experience.</li>
-                    </ul>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <div class="service-icon icon-unity"><i class="fas fa-gamepad"></i></div>
+                <h3>Unity Game Development</h3>
+                <p>2D &amp; 3D games for iOS, Android, and PC — from casual puzzlers to immersive 3D sims with multiplayer, AI, and monetization baked in.</p>
+                <ul class="service-tags">
+                    <li>C# / OOP</li>
+                    <li>Photon Fusion</li>
+                    <li>URP / HDRP</li>
+                    <li>AI / NavMesh</li>
+                </ul>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-icon icon-flutter"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Flutter App Development</h3>
+                <p>Beautiful, performant cross-platform apps from a single Dart codebase — with native feel on both iOS and Android.</p>
+                <ul class="service-tags">
+                    <li>Dart</li>
+                    <li>Firebase</li>
+                    <li>REST APIs</li>
+                    <li>Riverpod</li>
+                </ul>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-icon icon-xr"><i class="fas fa-vr-cardboard"></i></div>
+                <h3>AR / VR / XR</h3>
+                <p>Immersive experiences with AR Foundation, ARKit, ARCore, and Oculus SDK — training sims, interactive tours, and spatial apps.</p>
+                <ul class="service-tags">
+                    <li>AR Foundation</li>
+                    <li>OpenXR</li>
+                    <li>Oculus SDK</li>
+                    <li>Spatial</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="work" class="section section-alt">
+    <div class="container">
+        <div class="section-head fade-up">
+            <span class="section-tag">Portfolio</span>
+            <h2>Featured Projects</h2>
+            <p>Published titles on the App Store &amp; Google Play</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="published">Published</button>
+            <button class="filter-btn" data-filter="development">In Development</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+            <!-- Published projects with images -->
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/ludo.png" alt="Ludo Pachisi 10" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Board Game</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Ludo — Pachisi 10 Board Game</h3>
+                    <p>Modern Ludo with multiplayer modes, AI opponents, and cross-platform play. Quick matches, collectible skins, and engaging gameplay.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>C#</span><span>Multiplayer</span>
+                    </div>
+                    <a href="https://apps.apple.com/au/app/ludo-pachisi-10-board-game/id1441604477" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Apr 2025 – Jun 2025</div>
-                <div class="timeline-content">
-                    <h3>Unity Game Developer</h3>
-                    <p class="company">Gamivision</p>
-                    <ul>
-                        <li>Developed core gameplay systems for hyper-casual games that achieved over one million
-                            downloads.</li>
-                        <li>Integrated Unity Ads, AdMob and IAPs to boost in-game revenue streams.</li>
-                        <li>Reduced runtime crashes on Android by 40% through advanced optimization techniques.</li>
-                    </ul>
+
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/ballscapes.png" alt="Ball Escapes" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Puzzle Game</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Ball Escapes — Sort Balls Puzzle</h3>
+                    <p>Relaxing ball sorting puzzle with hundreds of handcrafted levels. One-finger controls, offline play, and beautiful themes.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Mobile</span><span>Casual</span>
+                    </div>
+                    <a href="https://apps.apple.com/au/app/sort-balls-relax-ballscapes/id1554053656" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Sep 2023 – Mar 2025</div>
-                <div class="timeline-content">
-                    <h3>Unity Game Developer</h3>
-                    <p class="company">Cross Code</p>
-                    <ul>
-                        <li>Developed mobile and PC titles featuring procedural maps, AI-driven NPCs and multiplayer
-                            modes.</li>
-                        <li>Published multiple titles to Google Play & iOS App Store with analytics integration.</li>
-                        <li>Collaborated within a Scrum team of 8 developers and designers to ensure timely releases.
-                        </li>
-                    </ul>
+
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/scarface.png" alt="Scarface Horror Game" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Horror Game</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Scarface — Scary Game 2026</h3>
+                    <p>Immersive horror survival with intense atmosphere, challenging gameplay, and thrilling scares across dark environments.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>3D</span><span>Horror</span>
+                    </div>
+                    <a href="https://apps.apple.com/ca/app/scarface-scary-game-2026/id6751227596" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Jul 2023 – Sep 2023</div>
-                <div class="timeline-content">
-                    <h3>Unity Developer Intern</h3>
-                    <p class="company">Cross Code</p>
-                    <ul>
-                        <li>Supported senior developers in building UI systems and AI mechanics.</li>
-                        <li>Assisted with debugging mobile builds and reducing load times on Android.</li>
-                    </ul>
+
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/jeep-driving.png" alt="Jeep Driving Offroad" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Simulation</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Jeep Driving — Offroading</h3>
+                    <p>Realistic offroad driving simulator with challenging terrain, multiple vehicles, and authentic physics engine.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Physics</span><span>3D</span>
+                    </div>
+                    <a href="https://apps.apple.com/ca/app/jeep-driving-games-offroading/id6449359294" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/club-manager.png" alt="Club Manager Simulator" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Management</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Club &amp; Bar Manager Simulator</h3>
+                    <p>Build your own club empire — manage customers, hire staff, upgrade facilities, and make strategic decisions.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Simulation</span><span>Strategy</span>
+                    </div>
+                    <a href="https://apps.apple.com/ca/app/club-bar-manager-simulator/id6754281343" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/deer-hunter.png" alt="Wild Deer Hunter" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Simulation</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Wild Deer Hunter</h3>
+                    <p>Realistic hunting simulation with advanced AI, beautiful environments, and authentic mechanics across diverse terrains.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>AI</span><span>3D Graphics</span>
+                    </div>
+                    <a href="https://apps.apple.com/us/app/wild-deer-hunter-hunting-games/id6443416280" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="published">
+                <div class="project-img">
+                    <img src="images/cooking-empire.png" alt="Cooking Empire" loading="lazy">
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Time Management</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Cooking Empire</h3>
+                    <p>Fast-paced cooking game — prepare dishes, serve customers, upgrade your kitchen, and build a culinary empire.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Casual</span><span>Mobile</span>
+                    </div>
+                    <a href="https://apps.apple.com/pk/app/cooking-empire-cooking-game/id6478499863" target="_blank" rel="noopener" class="project-link">
+                        <i class="fab fa-app-store-ios"></i> App Store <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- In Development projects -->
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/arena.png" alt="Multiplayer Arena" loading="lazy">
+                    <span class="project-badge badge-dev">In Dev</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Multiplayer</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Multiplayer Arena</h3>
+                    <p>Cross-platform PvP arena with Photon Fusion — fast combat, ranked seasons, dynamic matchmaking.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Photon Fusion</span><span>PvP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/training.png" alt="VR Safety Training" loading="lazy">
+                    <span class="project-badge badge-dev">In Dev</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">VR Training</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>VR Safety Training Simulator</h3>
+                    <p>Immersive VR for industrial safety — physics-based hazards, branching scenarios, performance analytics.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>VR</span><span>Oculus</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/science.png" alt="AR Science Learning" loading="lazy">
+                    <span class="project-badge badge-dev">In Dev</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">AR Education</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>AR Science Learning App</h3>
+                    <p>Interactive science experiments in AR — physics, chemistry, biology with teacher dashboard.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>AR Foundation</span><span>Education</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/survival.png" alt="AI Survival Game" loading="lazy">
+                    <span class="project-badge badge-dev">In Dev</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Survival</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>AI Survival Game</h3>
+                    <p>Procedural survival with day-night cycles, dynamic weather, base-building and learning AI.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>AI</span><span>Procedural</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/dungeon.png" alt="Procedural Dungeon" loading="lazy">
+                    <span class="project-badge badge-dev">In Dev</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Research</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>Procedural Dungeon Generator</h3>
+                    <p>Algorithmic engine for infinite dungeons using layered noise, L-systems, and dynamic loot tables.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Algorithms</span><span>PCG</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/tourism.png" alt="VR Tourism" loading="lazy">
+                    <span class="project-badge badge-dev">In Dev</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">VR Experience</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>VR Tourism Prototype</h3>
+                    <p>Virtual heritage tours — high-res photogrammetry, environmental puzzles, narrated storytelling.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>VR</span><span>Photogrammetry</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-up" data-status="development">
+                <div class="project-img">
+                    <img src="images/analytics.png" alt="Analytics Dashboard" loading="lazy">
+                    <span class="project-badge badge-dev">Internal</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta">
+                        <span class="project-cat">Tools</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Cross-platform analytics with interactive 3D charts, retention metrics, and A/B testing visualization.</p>
+                    <div class="project-tags">
+                        <span>Unity</span><span>Node.js</span><span>Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-head fade-up">
+            <span class="section-tag">About Me</span>
+            <h2>Who I Am</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text fade-up">
+                <p class="lead">
+                    I'm <strong>Zubair Ali</strong> — a software engineer with <strong>3+ years</strong> shipping games
+                    and apps that real people download, play, and love.
+                </p>
+                <p>
+                    I specialize in board and card games, simulation titles, and management games in Unity — plus
+                    cross-platform mobile apps in Flutter. My technical toolkit spans modular Unity architectures,
+                    AI with finite state machines, multiplayer via Photon Fusion, and optimized mobile performance.
+                </p>
+                <p>
+                    Whether it's building robust multiplayer systems, implementing complex AI behaviors, or
+                    tuning performance for low-end devices — I bring dedication and clean code to every project.
+                </p>
+            </div>
+            <div class="about-skills fade-up">
+                <h3>Core Technologies</h3>
+                <div class="tech-grid">
+                    <div class="tech-item"><i class="fas fa-gamepad"></i> Unity 3D/2D</div>
+                    <div class="tech-item"><i class="fas fa-mobile-alt"></i> Flutter & Dart</div>
+                    <div class="tech-item"><i class="fas fa-code"></i> C# & OOP</div>
+                    <div class="tech-item"><i class="fas fa-users"></i> Photon PUN/Fusion</div>
+                    <div class="tech-item"><i class="fas fa-robot"></i> AI / NavMesh</div>
+                    <div class="tech-item"><i class="fas fa-vr-cardboard"></i> AR / VR / XR</div>
+                    <div class="tech-item"><i class="fas fa-palette"></i> Shader Graph / VFX</div>
+                    <div class="tech-item"><i class="fas fa-tachometer-alt"></i> Performance Tuning</div>
+                    <div class="tech-item"><i class="fas fa-code-branch"></i> Git / CI-CD</div>
+                    <div class="tech-item"><i class="fas fa-database"></i> Firebase</div>
+                    <div class="tech-item"><i class="fas fa-ad"></i> AdMob / IAP</div>
+                    <div class="tech-item"><i class="fas fa-tasks"></i> Agile / Scrum</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Education & Certifications Section -->
-<section id="education" class="section education-section">
+<!-- Experience -->
+<section id="experience" class="section section-alt">
     <div class="container">
-        <div class="section-header fade-in-section">
-            <span class="section-label">Qualifications</span>
-            <h2 class="section-title">Education & Certifications</h2>
+        <div class="section-head fade-up">
+            <span class="section-tag">Career</span>
+            <h2>Experience &amp; Education</h2>
         </div>
-        <div class="education-grid fade-in-section">
-            <div class="education-item">
-                <h3>Bachelor of Computer Science</h3>
-                <p>COMSATS University Islamabad, Lahore Campus</p>
-                <span class="edu-date">2021 – 2025</span>
+        <div class="exp-grid">
+            <div class="exp-timeline fade-up">
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-date">Jul 2025 – Present</div>
+                    <div class="exp-content">
+                        <h3>Unity Game Developer</h3>
+                        <p class="exp-company">Skill Knight Studios</p>
+                        <ul>
+                            <li>Multiplayer PvP arena with Photon Fusion — matchmaking &amp; scalable servers</li>
+                            <li>Improved cross-device performance by 25% via rendering &amp; memory profiling</li>
+                            <li>Designed live-ops systems: leaderboards, achievements, seasonal events</li>
+                            <li>Implemented AI-driven gameplay mechanics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-date">Apr 2025 – Jun 2025</div>
+                    <div class="exp-content">
+                        <h3>Unity Game Developer</h3>
+                        <p class="exp-company">Gamivision</p>
+                        <ul>
+                            <li>Core gameplay systems for hyper-casual games — 1M+ downloads</li>
+                            <li>Integrated Unity Ads, AdMob &amp; IAPs for revenue optimization</li>
+                            <li>Reduced Android runtime crashes by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-date">Sep 2023 – Mar 2025</div>
+                    <div class="exp-content">
+                        <h3>Unity Game Developer</h3>
+                        <p class="exp-company">Cross Code</p>
+                        <ul>
+                            <li>Mobile &amp; PC titles — procedural maps, AI NPCs, multiplayer</li>
+                            <li>Published multiple titles to Google Play &amp; iOS App Store</li>
+                            <li>Scrum team of 8 developers &amp; designers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-date">Jul – Sep 2023</div>
+                    <div class="exp-content">
+                        <h3>Unity Developer Intern</h3>
+                        <p class="exp-company">Cross Code</p>
+                        <ul>
+                            <li>UI systems and AI mechanics support</li>
+                            <li>Mobile build debugging &amp; load time optimization</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="certifications">
-                <h3>Certifications</h3>
+            <div class="edu-col fade-up">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>BS Computer Science</h3>
+                    <p>COMSATS University Islamabad</p>
+                    <span class="edu-date">2021 – 2025</span>
+                </div>
                 <div class="cert-list">
-                    <div class="cert-card">
-                        <div class="cert-text">
-                            <span class="cert-title">Unity Certified Programmer</span>
-                            <span class="cert-year">2025</span>
-                        </div>
+                    <h3>Certifications</h3>
+                    <div class="cert-item">
+                        <span>Unity Certified Programmer</span>
+                        <span class="cert-year">2025</span>
                     </div>
-                    <div class="cert-card">
-                        <div class="cert-text">
-                            <span class="cert-title">Unity AR/VR Developer Pathway</span>
-                            <span class="cert-year">2024</span>
-                        </div>
+                    <div class="cert-item">
+                        <span>Unity AR/VR Developer Pathway</span>
+                        <span class="cert-year">2024</span>
                     </div>
-                    <div class="cert-card">
-                        <div class="cert-text">
-                            <span class="cert-title">C# Programming for Game Development</span>
-                            <span class="cert-year">2023</span>
-                        </div>
+                    <div class="cert-item">
+                        <span>C# for Game Development</span>
+                        <span class="cert-year">2023</span>
                     </div>
-                    <div class="cert-card">
-                        <div class="cert-text">
-                            <span class="cert-title">Agile Development Specialization</span>
-                            <span class="cert-year">2023</span>
-                        </div>
+                    <div class="cert-item">
+                        <span>Agile Development Specialization</span>
+                        <span class="cert-year">2023</span>
                     </div>
                 </div>
             </div>
@@ -777,47 +564,42 @@
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section contact-section">
+<!-- Contact -->
+<section id="contact" class="section">
     <div class="container">
-        <div class="section-header fade-in-section">
-            <span class="section-label">Get in Touch</span>
-            <h2 class="section-title">Let's Build Something Together</h2>
-            <p class="section-subtitle">Got a project in mind? Let's bring it to life together!</p>
-            </div>
+        <div class="section-head fade-up">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Let's Build Something Together</h2>
+            <p>Got a game or app idea? I'd love to hear about it.</p>
+        </div>
+        <div class="contact-grid fade-up">
+            <a href="mailto:zubair.workspace@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <span>zubair.workspace@gmail.com</span>
+            </a>
+            <a href="tel:+923184595649" class="contact-card">
+                <i class="fas fa-phone"></i>
+                <span>+92 318 459 5649</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zubair-ali-333175242/" target="_blank" rel="noopener" class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/zubairali001" target="_blank" rel="noopener" class="contact-card">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+</section>
 
-            <div class="contact-content fade-in-section">
-                <div class="contact-info">
-                    <a href="mailto:zubair.workspace@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>zubair.workspace@gmail.com</span>
-                    </a>
-                    <a href="tel:+923184595649" class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+92 318 4595649</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/zubair-ali-333175242/" target="_blank" class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                        </a>
-                    <a href="https://github.com/zubairali001" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                        </a>
-                </div>
-                </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Zubair Ali. All rights reserved.</p>
-            <p class="footer-note">Crafted with passion for immersive digital experiences</p>
-        </div>
-    </footer>
-    
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Zubair Ali. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
